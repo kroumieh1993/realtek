@@ -14,7 +14,7 @@ class Es_Framework {
 	protected $_config;
 
 	/**
-	 * Estatik constructor.
+	 * Realtek constructor.
 	 *
 	 * @return void
 	 */

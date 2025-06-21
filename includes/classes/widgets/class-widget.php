@@ -3,7 +3,7 @@
 /**
  * Class Es_Widget.
  *
- * Base plugin class for estatik widgets.
+ * Base plugin class for realtek widgets.
  */
 abstract class Es_Widget extends WP_Widget {
 

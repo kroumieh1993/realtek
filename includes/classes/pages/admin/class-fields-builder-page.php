@@ -386,7 +386,7 @@ class Es_Fields_Builder_Page {
                 }
 
 				global $wpdb;
-				$wpdb->query( $wpdb->prepare( "DELETE FROM {$wpdb->prefix}estatik_fb_fields WHERE section_machine_name='%s' OR tab_machine_name='%s'", $machine_name, $machine_name ) );
+				$wpdb->query( $wpdb->prepare( "DELETE FROM {$wpdb->prefix}realtek_fb_fields WHERE section_machine_name='%s' OR tab_machine_name='%s'", $machine_name, $machine_name ) );
 
 				$response = es_notification_ajax_response( __( sprintf( 'Section <b>%s</b> was deleted successfully.', $section_name ), 'es' ), 'success' );
 			} else {
@@ -617,10 +617,10 @@ class Es_Fields_Builder_Page {
     }
 
 	public static function enqueue_assets() {
-		wp_enqueue_style( 'es-fields-builder', plugin_dir_url( ES_FILE ) . 'admin/css/fields-builder.min.css', array( 'es-admin', 'estatik-popup' ), Estatik::get_version() );
-		wp_enqueue_script( 'es-fields-builder', plugin_dir_url( ES_FILE ) . 'admin/js/fields-builder.min.js', array( 'jquery', 'es-admin', 'jquery-ui-sortable', 'estatik-popup', 'clipboard' ), Estatik::get_version() );
+		wp_enqueue_style( 'es-fields-builder', plugin_dir_url( ES_FILE ) . 'admin/css/fields-builder.min.css', array( 'es-admin', 'realtek-popup' ), Realtek::get_version() );
+		wp_enqueue_script( 'es-fields-builder', plugin_dir_url( ES_FILE ) . 'admin/js/fields-builder.min.js', array( 'jquery', 'es-admin', 'jquery-ui-sortable', 'realtek-popup', 'clipboard' ), Realtek::get_version() );
 
-		wp_localize_script( 'es-fields-builder', 'Estatik_Fields_Builder', array(
+		wp_localize_script( 'es-fields-builder', 'Realtek_Fields_Builder', array(
 			'nonce' => array(
 				'get_field_form' => wp_create_nonce(  'es_fields_builder_get_field_form' ),
 				'get_section_form' => wp_create_nonce(  'es_fields_builder_get_section_form' ),

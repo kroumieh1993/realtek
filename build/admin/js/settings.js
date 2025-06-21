@@ -9,10 +9,10 @@
                 response = response || {};
 
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 }
             }, 'json' ).fail( function() {
-                Estatik_Admin.renderNotification( "<div class='es-notification es-notification--error'>Saving error. Please, contact estatik support.</div>" );
+                Realtek_Admin.renderNotification( "<div class='es-notification es-notification--error'>Saving error. Please, contact realtek support.</div>" );
             } ).always( function() {
                 $button.addClass( 'es-hidden' );
                 $button.removeProp( 'disabled' ).removeAttr( 'disabled' );

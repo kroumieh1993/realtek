@@ -31,11 +31,11 @@ class Es_Plugin_Migration {
 		global $wpdb;
 
 		$minor_table_exists = $wpdb->get_var( "SHOW TABLES LIKE '{$wpdb->prefix}es_mls_active_fields'" );
-		$major_table_exists = $wpdb->get_var( "SHOW TABLES LIKE '{$wpdb->prefix}estatik_mls_active_fields'" );
+		$major_table_exists = $wpdb->get_var( "SHOW TABLES LIKE '{$wpdb->prefix}realtek_mls_active_fields'" );
 
 		if ( ! $minor_table_exists || ! $major_table_exists || get_option( 'es_mls_fields_migrated' ) ) return false;
 
-		$copy_query = $wpdb->query( "INSERT INTO {$wpdb->prefix}estatik_mls_active_fields SELECT * FROM {$wpdb->prefix}es_mls_active_fields;" );
+		$copy_query = $wpdb->query( "INSERT INTO {$wpdb->prefix}realtek_mls_active_fields SELECT * FROM {$wpdb->prefix}es_mls_active_fields;" );
 
 		if ( $copy_query !== false ) {
 			update_option( 'es_mls_fields_migrated', 1 );

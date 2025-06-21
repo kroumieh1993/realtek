@@ -24,7 +24,7 @@
     ) );
 
     es_settings_field_render( 'is_update_search_results_enabled', array(
-        'label' => __( 'Enable auto-update search results for Simple and Advanced Estatik search', 'es' ),
+        'label' => __( 'Enable auto-update search results for Simple and Advanced Realtek search', 'es' ),
         'type' => 'switcher',
     ) );
 

@@ -35,7 +35,7 @@
         $( '.js-es-country-field' ).on( 'change', function() {
             if ( $( this ).is( ':checked' ) ) {
                 var $description = $( this ).closest( '.es-field--multiple-checks' ).find( '.es-field__description' );
-                var country_data = Estatik.country_data;
+                var country_data = Realtek.country_data;
                 var value = $( this ).val();
                 var description = $( this ).data( 'description' );
 

@@ -30,7 +30,7 @@ class Elementor_Es_Agencies_Widget extends Elementor_Es_Base_Widget {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return _x( 'Estatik Agencies', 'widget name', 'es' );
+		return _x( 'Realtek Agencies', 'widget name', 'es' );
 	}
 
 	/**

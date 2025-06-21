@@ -9,7 +9,7 @@
     function loadFieldLocations( $field, $dep_field ) {
         var data = {
             action: 'es_get_locations',
-            nonce: Estatik.nonce.nonce_locations,
+            nonce: Realtek.nonce.nonce_locations,
             types: $field.data( 'address-components' )
         };
 
@@ -25,7 +25,7 @@
             data.dependency_id = $dep_field.val();
         }
 
-        $.get( Estatik.settings.ajaxurl, data, function( response ) {
+        $.get( Realtek.settings.ajaxurl, data, function( response ) {
             if ( response ) {
                 Object.keys( response ).map(function(objectKey, index) {
                     var label = response[objectKey];
@@ -102,12 +102,12 @@
             var property_id = $el.data( 'entity-id' );
             var data = {
                 action: 'es_management_delete_property_popup',
-                _nonce: Estatik.nonce.delete_property_popup,
+                _nonce: Realtek.nonce.delete_property_popup,
                 property_id: property_id
             };
 
             if ( property_id ) {
-                $.get( Estatik.settings.ajaxurl, data, function( response ) {
+                $.get( Realtek.settings.ajaxurl, data, function( response ) {
                     $.magnificPopup.open( {
                         items: { src: response.message },
                         type:'inline',
@@ -122,7 +122,7 @@
                     } );
 
                     setTimeout( function() {
-                        EstatikProperties.initCarousel( $( document ).find( '.es-magnific-popup--delete-action' ) );
+                        RealtekProperties.initCarousel( $( document ).find( '.es-magnific-popup--delete-action' ) );
                     } );
                 }, 'json' );
             }
@@ -150,7 +150,7 @@
         } );
 
         $( document ).on( 'click', '.js-es-delete-bulk, .js-es-duplicate-bulk', function() {
-            var tr = EstatikManagement.tr;
+            var tr = RealtekManagement.tr;
             var action = $( this ).data( 'action' );
 
             var $checkboxes = $( '.js-es-table tbody .es-column--_manage-checkbox input[type=checkbox]:checked' );

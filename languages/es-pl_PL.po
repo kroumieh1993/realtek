@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Estatik PRO\n"
+"Project-Id-Version: Realtek PRO\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-09 17:12+0000\n"
 "PO-Revision-Date: 2023-01-14 06:14+0000\n"
@@ -58,8 +58,8 @@ msgid "(ID: %s)"
 msgstr ""
 
 #: includes/classes/pages/admin/class-demo-page.php:258
-msgid "1 Estatik Theme FREE to your choice"
-msgstr "1 Estatik tematem ZA DARMO do wyboru"
+msgid "1 Realtek Theme FREE to your choice"
+msgstr "1 Realtek tematem ZA DARMO do wyboru"
 
 #: includes/classes/pages/admin/class-demo-page.php:198
 msgid "1 year FREE support for 1 website"
@@ -144,9 +144,9 @@ msgstr ""
 
 #. Description of the plugin
 #, fuzzy
-#| msgid "A premium version of Estatik Real Estate plugin for Wordpress."
-msgid "A PRO version of Estatik Real Estate plugin for Wordpress."
-msgstr "Prosta wersja wtyczki Estatik Real Estate dla Wordpressa."
+#| msgid "A premium version of Realtek Real Estate plugin for Wordpress."
+msgid "A PRO version of Realtek Real Estate plugin for Wordpress."
+msgstr "Prosta wersja wtyczki Realtek Real Estate dla Wordpressa."
 
 #: includes/classes/class-auth-init.php:367
 #, php-format
@@ -225,7 +225,7 @@ msgstr "Dodaj agencję"
 msgid "Add Agent"
 msgstr "Dodaj agenta"
 
-#: includes/classes/framework/class-estatik-framework.php:54
+#: includes/classes/framework/class-realtek-framework.php:54
 #: includes/classes/framework/fields/class-images-field.php:47
 #: includes/classes/framework/fields/class-media-field.php:77
 #: includes/classes/framework/fields/class-media-field.php:108
@@ -1429,7 +1429,7 @@ msgstr ""
 
 #: includes/classes/pages/admin/class-dashboard-page.php:185
 msgctxt "changelog"
-msgid "Estatik settings php warning fixed (All versions)"
+msgid "Realtek settings php warning fixed (All versions)"
 msgstr ""
 
 #: includes/classes/pages/admin/class-dashboard-page.php:61
@@ -1560,7 +1560,7 @@ msgid "Check marks"
 msgstr "Sprawdź znaki"
 
 #: templates/admin/dashboard/index.php:102
-msgid "Check out other <br>Estatik Real Estate Web Solutions"
+msgid "Check out other <br>Realtek Real Estate Web Solutions"
 msgstr ""
 
 #: includes/classes/class-settings-container.php:1323
@@ -1767,8 +1767,8 @@ msgid "Compare"
 msgstr ""
 
 #: templates/admin/demo/start.php:35
-msgid "Compare and choose <br>your version of Estatik"
-msgstr "Porównaj i wybierz <br>swoją wersję Estatik"
+msgid "Compare and choose <br>your version of Realtek"
+msgstr "Porównaj i wybierz <br>swoją wersję Realtek"
 
 #: includes/classes/pages/admin/class-demo-page.php:222
 msgid "Compare feature"
@@ -2547,8 +2547,8 @@ msgstr "Styl"
 
 #: includes/classes/class-elementor.php:116
 msgctxt "Elementor widgets category name"
-msgid "Estatik"
-msgstr "Estatik"
+msgid "Realtek"
+msgstr "Realtek"
 
 #: includes/classes/entities/class-agent-post.php:63
 #: includes/classes/entities/class-user.php:26
@@ -2627,10 +2627,10 @@ msgstr "Włącz automatyczne tagi"
 
 #: templates/admin/settings/tabs/listing-search-tab.php:22
 msgid ""
-"Enable auto-update search results for Simple and Advanced Estatik search"
+"Enable auto-update search results for Simple and Advanced Realtek search"
 msgstr ""
 "Włącz automatyczną aktualizację wyników wyszukiwania dla prostego i "
-"zaawansowanego wyszukiwania Estatik"
+"zaawansowanego wyszukiwania Realtek"
 
 #: templates/admin/settings/tabs/listing-search-tab.php:27
 msgid "Enable autocomplete locations for search"
@@ -2877,11 +2877,11 @@ msgstr ""
 
 #: templates/admin/settings/tabs/general-tab.php:52
 msgid ""
-"Enable this option if you want to remove Estatik logo and 'Powered by' link "
-"on Estatik pages."
+"Enable this option if you want to remove Realtek logo and 'Powered by' link "
+"on Realtek pages."
 msgstr ""
-"Włącz tę opcję, jeśli chcesz usunąć logo Estatik i link „Powered by” na "
-"stronach Estatik."
+"Włącz tę opcję, jeśli chcesz usunąć logo Realtek i link „Powered by” na "
+"stronach Realtek."
 
 #: templates/admin/settings/tabs/general-tab.php:50
 msgid "Enable white label"
@@ -2962,79 +2962,79 @@ msgstr ""
 #. Author of the plugin
 #: includes/hooks.php:573 includes/classes/class-admin-menu.php:42
 #: includes/classes/class-admin-menu.php:43
-msgid "Estatik"
-msgstr "Estatik"
+msgid "Realtek"
+msgstr "Realtek"
 
-#: includes/classes/class-estatik.php:196
-msgctxt "estatik agent role name"
+#: includes/classes/class-realtek.php:196
+msgctxt "realtek agent role name"
 msgid "Agent"
 msgstr "Agent"
 
 #: includes/hooks.php:526
-msgid "Estatik Authentication"
-msgstr "Uwierzytelnianie Estatik"
+msgid "Realtek Authentication"
+msgstr "Uwierzytelnianie Realtek"
 
 #: includes/classes/shortcodes/class-subscriptions-shortcode.php:17
-msgctxt "estatik featured listings"
+msgctxt "realtek featured listings"
 msgid "FREE"
 msgstr "DARMOWY"
 
 #: includes/hooks.php:528
-msgid "Estatik Half map"
-msgstr "Estatik Połowa mapa"
+msgid "Realtek Half map"
+msgstr "Realtek Połowa mapa"
 
 #: includes/hooks.php:531
-msgid "Estatik Pricing"
-msgstr "Estatik Cennik"
+msgid "Realtek Pricing"
+msgstr "Realtek Cennik"
 
 #. Name of the plugin
-msgid "Estatik PRO"
+msgid "Realtek PRO"
 msgstr ""
 
 #: includes/classes/pages/admin/class-demo-page.php:278
-msgctxt "estatik product"
+msgctxt "realtek product"
 msgid "Premium"
 msgstr "Premium"
 
 #: includes/classes/pages/admin/class-demo-page.php:273
-msgctxt "estatik product"
+msgctxt "realtek product"
 msgid "PRO"
 msgstr "PRO"
 
 #: includes/classes/pages/admin/class-demo-page.php:268
-msgctxt "estatik product"
+msgctxt "realtek product"
 msgid "Simple"
 msgstr "Simple"
 
 #: includes/hooks.php:527
-msgid "Estatik Profile"
-msgstr "Estatik Profil"
+msgid "Realtek Profile"
+msgstr "Realtek Profil"
 
 #: includes/hooks.php:530
-msgid "Estatik Properties Management"
-msgstr "Zarządzanie nieruchomościami Estatik"
+msgid "Realtek Properties Management"
+msgstr "Zarządzanie nieruchomościami Realtek"
 
 #: includes/classes/shortcodes/class-request-form-shortcode.php:77
-msgid "Estatik Request Info from"
-msgstr "Estatik Prośba o informacje od"
+msgid "Realtek Request Info from"
+msgstr "Realtek Prośba o informacje od"
 
 #: includes/hooks.php:529
-msgid "Estatik Search results"
-msgstr "Estatik Wyniki wyszukiwania"
+msgid "Realtek Search results"
+msgstr "Realtek Wyniki wyszukiwania"
 
 #: includes/classes/pages/admin/class-demo-page.php:269
-msgctxt "estatik simple price"
+msgctxt "realtek simple price"
 msgid "Free"
 msgstr "Darmowy"
 
 #: includes/classes/class-divi-single-entity-module.php:14
 #: includes/classes/class-divi-single-entity-module.php:15
-msgid "Estatik Single Page"
+msgid "Realtek Single Page"
 msgstr ""
 
 #: templates/admin/dashboard/partials/themes.php:2
-msgid "Estatik themes & freebies"
-msgstr "Estatik tematy & darmochy"
+msgid "Realtek themes & freebies"
+msgstr "Realtek tematy & darmochy"
 
 #: includes/classes/class-settings-container.php:809
 msgid "ETB - Ethiopian Birr"
@@ -3081,7 +3081,7 @@ msgstr "Facebook"
 msgid "Facebook user email is empty"
 msgstr "Adres e-mail użytkownika Facebooka jest pusty"
 
-#: includes/classes/framework/class-estatik-framework.php:55
+#: includes/classes/framework/class-realtek-framework.php:55
 msgid "Failed"
 msgstr ""
 "Przegrany\n"
@@ -3706,8 +3706,8 @@ msgstr "HTG - Gourde"
 
 #. URI of the plugin
 #. Author URI of the plugin
-msgid "http://estatik.net"
-msgstr "http://estatik.net"
+msgid "http://realtek.net"
+msgstr "http://realtek.net"
 
 #: includes/classes/class-settings-container.php:823
 msgid "HUF - Forint"
@@ -3860,7 +3860,7 @@ msgstr "Instalacja i konfiguracja"
 
 #: includes/classes/pages/admin/class-dashboard-page.php:316
 msgid ""
-"Installation, connection to MLS, and mapping MLS fields to Estatik for every "
+"Installation, connection to MLS, and mapping MLS fields to Realtek for every "
 "property type (Residential, Commercial, Multifamily, Lease, LotsAndLand, etc."
 "), setting up automatic import, and launching synchronization."
 msgstr ""
@@ -4148,9 +4148,9 @@ msgstr ""
 "Mniej filtrów\n"
 
 #: templates/admin/demo/steps/step1.php:2
-msgid "Let’s adjust Estatik to your needs"
+msgid "Let’s adjust Realtek to your needs"
 msgstr ""
-"Dostosujmy Estatik do Twoich potrzeb\n"
+"Dostosujmy Realtek do Twoich potrzeb\n"
 
 #: includes/classes/entities/class-property.php:428
 msgid "Level"
@@ -4574,7 +4574,7 @@ msgid "Migration"
 msgstr ""
 
 #: templates/admin/migration/index.php:4
-msgid "Migration from Estatik 3"
+msgid "Migration from Realtek 3"
 msgstr ""
 
 #: templates/admin/migration/index.php:18
@@ -7308,11 +7308,11 @@ msgstr "Teksty"
 
 #: templates/admin/demo/start.php:13
 msgid ""
-"Thank you for choosing Estatik. Grab your instant 5% OFF for<br> any Estatik "
+"Thank you for choosing Realtek. Grab your instant 5% OFF for<br> any Realtek "
 "product using coupon code below."
 msgstr ""
-"Dziękujemy za wybranie Estatik. Zgarnij natychmiastowe 5% ZNIŻKI na<br> "
-"dowolny produkt Estatik, korzystając z poniższego kodu kuponu."
+"Dziękujemy za wybranie Realtek. Zgarnij natychmiastowe 5% ZNIŻKI na<br> "
+"dowolny produkt Realtek, korzystając z poniższego kodu kuponu."
 
 #: includes/classes/class-settings-container.php:899
 msgid "THB - Baht"
@@ -7913,9 +7913,9 @@ msgstr ""
 "Co tydzień\n"
 
 #: templates/admin/demo/start.php:12
-msgid "Welcome to Estatik"
+msgid "Welcome to Realtek"
 msgstr ""
-"Witamy w Estatik\n"
+"Witamy w Realtek\n"
 
 #: templates/admin/demo/steps/step1.php:29
 msgid "What is your country?"
@@ -7985,67 +7985,67 @@ msgstr "Pionowy"
 
 #: includes/classes/widgets/elementor/class-elementor-agencies-widget.php:33
 msgctxt "widget name"
-msgid "Estatik Agencies"
+msgid "Realtek Agencies"
 msgstr ""
 
 #: includes/classes/widgets/elementor/class-elementor-agents-widget.php:33
 msgctxt "widget name"
-msgid "Estatik Agents"
+msgid "Realtek Agents"
 msgstr ""
 
 #: includes/classes/widgets/elementor/class-elementor-authentication-widget.php:33
 msgctxt "widget name"
-msgid "Estatik Authentication"
-msgstr "Uwierzytelnianie Estatik"
+msgid "Realtek Authentication"
+msgstr "Uwierzytelnianie Realtek"
 
 #: includes/classes/widgets/elementor/class-elementor-half-map-widget.php:47
 msgctxt "widget name"
-msgid "Estatik Half Map"
-msgstr "Estatik Połowa mapa"
+msgid "Realtek Half Map"
+msgstr "Realtek Połowa mapa"
 
 #: includes/classes/widgets/class-listings-widget.php:12
 #: includes/classes/widgets/elementor/class-elementor-listings-widget.php:33
 msgctxt "widget name"
-msgid "Estatik Listings"
-msgstr "Ogłoszenia Estatik"
+msgid "Realtek Listings"
+msgstr "Ogłoszenia Realtek"
 
 #: includes/classes/widgets/class-locations-grid-widget.php:12
 #: includes/classes/widgets/elementor/class-elementor-locations-grid-widget.php:33
 msgctxt "widget name"
-msgid "Estatik Locations"
-msgstr "Lokalizacje Estatik"
+msgid "Realtek Locations"
+msgstr "Lokalizacje Realtek"
 
 #: includes/classes/widgets/class-properties-slideshow-widget.php:12
 msgctxt "widget name"
-msgid "Estatik Properties Slideshow"
-msgstr "Pokaz slajdów z właściwościami Estatik"
+msgid "Realtek Properties Slideshow"
+msgstr "Pokaz slajdów z właściwościami Realtek"
 
 #: includes/classes/widgets/class-request-form-widget.php:12
 #: includes/classes/widgets/elementor/class-elementor-request-form-widget.php:33
 msgctxt "widget name"
-msgid "Estatik Request Form"
-msgstr "Estatik Formularz wniosku"
+msgid "Realtek Request Form"
+msgstr "Realtek Formularz wniosku"
 
 #: includes/classes/widgets/class-search-form-widget.php:12
 #: includes/classes/widgets/elementor/class-elementor-search-form-widget.php:47
 msgctxt "widget name"
-msgid "Estatik Search"
-msgstr "Estatik Szukaj"
+msgid "Realtek Search"
+msgstr "Realtek Szukaj"
 
 #: includes/classes/widgets/class-properties-slider-widget.php:12
 #: includes/classes/widgets/elementor/class-elementor-properties-slider-widget.php:33
 msgctxt "widget name"
-msgid "Estatik Slider"
-msgstr "Suwak Estatik"
+msgid "Realtek Slider"
+msgstr "Suwak Realtek"
 
 #: includes/classes/widgets/elementor/class-elementor-properties-slideshow-widget.php:33
 msgctxt "widget name"
-msgid "Estatik Slideshow"
+msgid "Realtek Slideshow"
 msgstr ""
 
 #: includes/classes/widgets/elementor/class-elementor-subscriptions-table-widget.php:31
 msgctxt "widget name"
-msgid "Estatik Subscriptions"
+msgid "Realtek Subscriptions"
 msgstr ""
 
 #: includes/classes/entities/class-property.php:442

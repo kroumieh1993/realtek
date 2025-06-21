@@ -1,7 +1,7 @@
 ( function( $ ) {
     'use strict';
 
-    var estatikPopup = function( options ) {
+    var realtekPopup = function( options ) {
         options = options || {};
         var $popup;
 
@@ -39,5 +39,5 @@
         return this;
     };
 
-    jQuery.estatikPopup = estatikPopup;
+    jQuery.realtekPopup = realtekPopup;
 } )( jQuery );

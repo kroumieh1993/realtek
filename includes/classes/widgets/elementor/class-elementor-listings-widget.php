@@ -30,7 +30,7 @@ class Elementor_Es_Listings_Widget extends Elementor_Es_Query_Widget {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return _x( 'Estatik Listings', 'widget name', 'es' );
+		return _x( 'Realtek Listings', 'widget name', 'es' );
 	}
 
     /**

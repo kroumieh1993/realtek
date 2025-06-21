@@ -30,7 +30,7 @@ class Elementor_Es_Request_Form_Widget extends Elementor_Es_Base_Widget {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return _x( 'Estatik Request Form', 'widget name', 'es' );
+		return _x( 'Realtek Request Form', 'widget name', 'es' );
 	}
 
     /**

@@ -27,7 +27,7 @@ function es_post( $name, $validator_callback = 'sanitize_text_field' ) {
 }
 
 /**
- * Return estatik setting value.
+ * Return realtek setting value.
  *
  * @param $name
  * @return mixed
@@ -47,7 +47,7 @@ function ests_label( $name ) {
 }
 
 /**
- * Return estatik setting values list.
+ * Return realtek setting values list.
  *
  * @param $name
  * @return mixed
@@ -58,7 +58,7 @@ function ests_values( $name ) {
 }
 
 /**
- * Return estatik setting values list.
+ * Return realtek setting values list.
  *
  * @param $name
  * @return mixed
@@ -69,7 +69,7 @@ function ests_default( $name ) {
 }
 
 /**
- * Return estatik setting selected values.
+ * Return realtek setting selected values.
  *
  * @param $name
  * @return mixed
@@ -2365,7 +2365,7 @@ if ( ! function_exists( 'array_key_first' ) ) {
 function es_get_email_logo_url() {
 	$attachment_id = ests( 'email_logo_attachment_id' );
 	$logo = $attachment_id ? wp_get_attachment_image_url( $attachment_id, 'full' ) :
-		ES_PLUGIN_URL . 'public/img/estatik-logo.svg';
+		ES_PLUGIN_URL . 'public/img/realtek-logo.svg';
 
 	return apply_filters( 'es_get_email_logo_url', $logo );
 }

@@ -227,6 +227,6 @@ abstract class Es_Entity_Fields_Meta_Box {
 	public static function enqueue_scripts() {
 		$f = es_framework_instance();
 		$f->load_assets();
-		wp_enqueue_style( 'es-metabox', ES_PLUGIN_URL . 'admin/css/metabox.min.css', array( 'es-admin', 'es-select2' ), Estatik::get_version() );
+		wp_enqueue_style( 'es-metabox', ES_PLUGIN_URL . 'admin/css/metabox.min.css', array( 'es-admin', 'es-select2' ), Realtek::get_version() );
 	}
 }

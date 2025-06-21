@@ -30,7 +30,7 @@ class Elementor_Es_Properties_Slideshow_Widget extends Elementor_Es_Query_Widget
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return _x( 'Estatik Slideshow', 'widget name', 'es' );
+		return _x( 'Realtek Slideshow', 'widget name', 'es' );
 	}
 
 	/**

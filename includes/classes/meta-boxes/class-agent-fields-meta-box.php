@@ -37,8 +37,8 @@ class Es_Agent_Fields_Meta_Box extends Es_Entity_Fields_Meta_Box {
 	public static function enqueue_scripts() {
 		parent::enqueue_scripts();
 		$deps = array( 'jquery', 'es-select2', 'es-admin' );
-		wp_enqueue_script( 'es-agent-metabox', ES_PLUGIN_URL . 'admin/js/agent-metabox.min.js', $deps, Estatik::get_version() );
-		wp_localize_script( 'es-agent-metabox', 'EstatikAgentMetabox', array(
+		wp_enqueue_script( 'es-agent-metabox', ES_PLUGIN_URL . 'admin/js/agent-metabox.min.js', $deps, Realtek::get_version() );
+		wp_localize_script( 'es-agent-metabox', 'RealtekAgentMetabox', array(
 			'tr' => array(
 				'invalid_password_format' => __( 'Invalid password field format', 'es' ),
 			),

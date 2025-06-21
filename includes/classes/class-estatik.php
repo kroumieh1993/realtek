@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Class Estatik
+ * Class Realtek
  *
  * Plugin initializer class.
  */
-class Estatik {
+class Realtek {
 
 	/**
 	 * Plugin instance.
 	 *
-	 * @var Estatik
+	 * @var Realtek
 	 */
 	protected static $_instance;
 
@@ -18,7 +18,7 @@ class Estatik {
 	const TYPE = 'pro';
 
 	/**
-	 * Estatik constructor.
+	 * Realtek constructor.
 	 */
 	protected function __construct() {
 		$this->load_files();
@@ -71,7 +71,7 @@ class Estatik {
 			'google-auth' => ES_PLUGIN_CLASSES . 'auth' . DS . 'class-google-authentication.php',
 
 			'framework' => ES_PLUGIN_CLASSES . 'framework' . DS . 'framework.php',
-			'admin_logo_init' => ES_PLUGIN_CLASSES . 'class-estatik-logo.php',
+			'admin_logo_init' => ES_PLUGIN_CLASSES . 'class-realtek-logo.php',
 
 			'assets-init' => ES_PLUGIN_CLASSES . 'class-assets-init.php',
 			'auth-init' => ES_PLUGIN_CLASSES . 'class-auth-init.php',
@@ -195,7 +195,7 @@ class Estatik {
 	public static function activation() {
 		do_action( 'es_activation' );
 
-		add_role( 'agent', _x( 'Agent', 'estatik agent role name', 'es' ) );
+		add_role( 'agent', _x( 'Agent', 'realtek agent role name', 'es' ) );
 	}
 
 	/**

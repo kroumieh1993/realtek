@@ -111,9 +111,9 @@ class Es_Subscriptions_Page {
 
 		wp_enqueue_style( 'wp-color-picker' );
 
-		wp_enqueue_style( 'es-admin-subscriptions', plugin_dir_url( ES_FILE ) . 'admin/css/subscriptions.min.css', array( 'es-select2', 'es-admin', 'estatik-popup' ), Estatik::get_version() );
-		wp_enqueue_script( 'es-admin-subscriptions', plugin_dir_url( ES_FILE ) . 'admin/js/subscriptions.min.js', array( 'jquery', 'es-admin', 'jquery-ui-sortable', 'estatik-popup' ), Estatik::get_version() );
-		wp_localize_script( 'es-admin-subscriptions', 'EstatikSubscription', array(
+		wp_enqueue_style( 'es-admin-subscriptions', plugin_dir_url( ES_FILE ) . 'admin/css/subscriptions.min.css', array( 'es-select2', 'es-admin', 'realtek-popup' ), Realtek::get_version() );
+		wp_enqueue_script( 'es-admin-subscriptions', plugin_dir_url( ES_FILE ) . 'admin/js/subscriptions.min.js', array( 'jquery', 'es-admin', 'jquery-ui-sortable', 'realtek-popup' ), Realtek::get_version() );
+		wp_localize_script( 'es-admin-subscriptions', 'RealtekSubscription', array(
 			'nonces' => array(
 				'save_plans_order' => wp_create_nonce( 'es_save_plans_order' )
 			),

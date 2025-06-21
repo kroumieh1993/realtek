@@ -187,11 +187,11 @@ class Es_Demo_Page {
         $f = es_framework_instance();
         $f->load_assets();
         wp_enqueue_script( 'es-admin' );
-        wp_enqueue_script( 'es-demo', ES_PLUGIN_URL . 'admin/js/demo.min.js', array( 'jquery' ), Estatik::get_version() );
-        wp_localize_script( 'es-demo', 'Estatik', array(
+        wp_enqueue_script( 'es-demo', ES_PLUGIN_URL . 'admin/js/demo.min.js', array( 'jquery' ), Realtek::get_version() );
+        wp_localize_script( 'es-demo', 'Realtek', array(
         	'country_data' => ests_values( 'country_settings' ),
         ) );
-        wp_enqueue_style( 'es-demo', ES_PLUGIN_URL . 'admin/css/demo.min.css', array( 'es-admin' ), Estatik::get_version() );
+        wp_enqueue_style( 'es-demo', ES_PLUGIN_URL . 'admin/css/demo.min.css', array( 'es-admin' ), Realtek::get_version() );
 
         es_load_template( 'admin/demo/index.php', array(
             'features' => array(
@@ -255,7 +255,7 @@ class Es_Demo_Page {
                     'pro' => true,
                     'premium' => true,
                 ),
-                __( '1 Estatik Theme FREE to your choice', 'es' ) => array(
+                __( '1 Realtek Theme FREE to your choice', 'es' ) => array(
                     'pro' => true,
                     'premium' => true,
                 ),
@@ -265,19 +265,19 @@ class Es_Demo_Page {
             ),
             'products' => array(
                 'simple' => array(
-                    'label' => _x( 'Simple', 'estatik product', 'es' ),
-                    'price' => _x( 'Free', 'estatik simple price', 'es' ),
+                    'label' => _x( 'Simple', 'realtek product', 'es' ),
+                    'price' => _x( 'Free', 'realtek simple price', 'es' ),
 	                'icon' => '<span class="es-icon es-icon_simple es-icon--rounded es-icon--light"></span>',
                 ),
                 'pro' => array(
-                    'label' => _x( 'PRO', 'estatik product', 'es' ),
+                    'label' => _x( 'PRO', 'realtek product', 'es' ),
                     'price' => '$89',
 	                'icon' => '<span class="es-icon es-icon_pro es-icon--rounded es-icon--light"></span>',
                 ),
                 'premium' => array(
-                    'label' => _x( 'Premium', 'estatik product', 'es' ),
+                    'label' => _x( 'Premium', 'realtek product', 'es' ),
                     'price' => '$649',
-                    'link' => 'https://estatik.net/choose-your-version/',
+                    'link' => 'https://realtek.net/choose-your-version/',
 		            'icon' => '<span class="es-icon es-icon_premium es-icon--rounded es-icon--light"></span>',
                 ),
             )

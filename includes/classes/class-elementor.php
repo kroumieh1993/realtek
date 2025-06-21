@@ -8,7 +8,7 @@ use \Elementor\Plugin;
 class Es_Elementor_Init {
 
 	/**
-	 * Initialize estatik elementor integration.
+	 * Initialize realtek elementor integration.
 	 *
 	 * @return void
 	 */
@@ -50,7 +50,7 @@ class Es_Elementor_Init {
 	}
 
     /**
-     * Disable default estatik widgets for elementor.
+     * Disable default realtek widgets for elementor.
      *
      * @param $list
      * @return array
@@ -116,15 +116,15 @@ class Es_Elementor_Init {
 	}
 
 	/**
-	 * Register new Estatik category.
+	 * Register new Realtek category.
 	 *
 	 * @param $elements_manager \Elementor\Elements_Manager
 	 */
 	public static function register_category( $elements_manager ) {
 		$elements_manager->add_category(
-			'estatik-category',
+			'realtek-category',
 			array(
-				'title' => _x( 'Estatik', 'Elementor widgets category name', 'es' ),
+				'title' => _x( 'Realtek', 'Elementor widgets category name', 'es' ),
 			)
 		);
 	}

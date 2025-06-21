@@ -23,10 +23,10 @@ class Es_Assets {
     }
 
 	public static function admin_assets() {
-		wp_register_script( 'es-admin', ES_PLUGIN_URL . 'admin/js/admin.min.js', array( 'jquery', 'clipboard', 'es-select2' ), Estatik::get_version() );
-		wp_register_style( 'es-admin', ES_PLUGIN_URL . 'admin/css/admin.min.css', array(), Estatik::get_version() );
+		wp_register_script( 'es-admin', ES_PLUGIN_URL . 'admin/js/admin.min.js', array( 'jquery', 'clipboard', 'es-select2' ), Realtek::get_version() );
+		wp_register_style( 'es-admin', ES_PLUGIN_URL . 'admin/css/admin.min.css', array(), Realtek::get_version() );
 
-		wp_localize_script( 'es-admin', 'Estatik', array(
+		wp_localize_script( 'es-admin', 'Realtek', array(
 			'nonces' => array(
 				'dismiss_notice_nonce' => wp_create_nonce( 'es_dismiss_notices' ),
 				'save_field_nonce' => wp_create_nonce( 'es_save_field' ),
@@ -43,7 +43,7 @@ class Es_Assets {
 			$deps[] = 'es-googlemap-api';
 		}
 
-		wp_register_script( 'es-property-metabox', ES_PLUGIN_URL . 'admin/js/property-metabox.min.js', $deps, Estatik::get_version() );
+		wp_register_script( 'es-property-metabox', ES_PLUGIN_URL . 'admin/js/property-metabox.min.js', $deps, Realtek::get_version() );
 
 		global $pagenow;
 
@@ -53,7 +53,7 @@ class Es_Assets {
 			wp_enqueue_style( 'es-select2' );
 			wp_enqueue_script( 'es-admin' );
 
-			wp_enqueue_style( 'es-locations', ES_PLUGIN_URL . 'admin/css/locations.min.css', array(), Estatik::get_version() );
+			wp_enqueue_style( 'es-locations', ES_PLUGIN_URL . 'admin/css/locations.min.css', array(), Realtek::get_version() );
 		} else {
 			wp_enqueue_script( 'es-admin' );
 		}
@@ -69,17 +69,17 @@ class Es_Assets {
 		$common = ES_PLUGIN_URL . 'common';
 
 		// Select2
-		wp_register_script( 'es-select2', $common . '/select2/select2.full.min.js', array( 'jquery' ), Estatik::get_version() );
-		wp_register_style( 'es-select2', $common . '/select2/select2.min.css', array(), Estatik::get_version()  );
+		wp_register_script( 'es-select2', $common . '/select2/select2.full.min.js', array( 'jquery' ), Realtek::get_version() );
+		wp_register_style( 'es-select2', $common . '/select2/select2.min.css', array(), Realtek::get_version()  );
 
-		wp_register_style( 'estatik-popup', $common . '/estatik-popup/estatik-popup.css', array(), Estatik::get_version() );
-		wp_register_script( 'estatik-popup', $common . '/estatik-popup/estatik-popup.js', array( 'jquery' ), Estatik::get_version() );
+		wp_register_style( 'realtek-popup', $common . '/realtek-popup/realtek-popup.css', array(), Realtek::get_version() );
+		wp_register_script( 'realtek-popup', $common . '/realtek-popup/realtek-popup.js', array( 'jquery' ), Realtek::get_version() );
 
-		wp_register_style( 'estatik-progress', $common . '/estatik-progress/estatik-progress.css', array(), Estatik::get_version() );
-		wp_register_script( 'estatik-progress', $common . '/estatik-progress/estatik-progress.js', array( 'jquery' ), Estatik::get_version() );
+		wp_register_style( 'realtek-progress', $common . '/realtek-progress/realtek-progress.css', array(), Realtek::get_version() );
+		wp_register_script( 'realtek-progress', $common . '/realtek-progress/realtek-progress.js', array( 'jquery' ), Realtek::get_version() );
 
-		wp_register_script( 'es-slick', $common . '/slick/slick-fixed.min.js', array( 'jquery' ), Estatik::get_version() );
-		wp_register_style( 'es-slick', $common . '/slick/slick.min.css', array(), Estatik::get_version() );
+		wp_register_script( 'es-slick', $common . '/slick/slick-fixed.min.js', array( 'jquery' ), Realtek::get_version() );
+		wp_register_style( 'es-slick', $common . '/slick/slick.min.css', array(), Realtek::get_version() );
 
 		es_framework_instance()->load_scripts();
 
@@ -87,9 +87,9 @@ class Es_Assets {
 		if ( ests( 'google_api_key' ) ) {
 			$api_deps = array();
 
-			wp_register_script( 'es-googlemap-osm', $public . '/js/osm.min.js', array(), Estatik::get_version() );
-			wp_register_script( 'es-googlemap-popup', $public . '/js/gm-popup.min.js', array(), Estatik::get_version() );
-			wp_register_script( 'es-googlemap-clusters-api', $public . '/js/markerclustererplus.min.js', array(), Estatik::get_version() );
+			wp_register_script( 'es-googlemap-osm', $public . '/js/osm.min.js', array(), Realtek::get_version() );
+			wp_register_script( 'es-googlemap-popup', $public . '/js/gm-popup.min.js', array(), Realtek::get_version() );
+			wp_register_script( 'es-googlemap-clusters-api', $public . '/js/markerclustererplus.min.js', array(), Realtek::get_version() );
 
 			if ( ests( 'is_clusters_enabled' ) ) {
 				$api_deps[] = 'es-googlemap-clusters-api';
@@ -109,7 +109,7 @@ class Es_Assets {
 		$common = ES_PLUGIN_URL . 'common';
 
 		wp_register_script( 'es-management', $public . '/js/management.min.js', array( 'es-properties' ) );
-		wp_localize_script( 'es-management', 'EstatikManagement', array(
+		wp_localize_script( 'es-management', 'RealtekManagement', array(
 			'tr' => es_js_get_translations(),
 		) );
 
@@ -119,8 +119,8 @@ class Es_Assets {
 			$management_deps[] = 'es-googlemap-api';
 		}
 
-		wp_register_script( 'es-property-metabox', ES_PLUGIN_URL . 'admin/js/property-metabox.min.js', $management_deps, Estatik::get_version() );
-		wp_localize_script( 'es-property-metabox', 'EstatikMetabox', array(
+		wp_register_script( 'es-property-metabox', ES_PLUGIN_URL . 'admin/js/property-metabox.min.js', $management_deps, Realtek::get_version() );
+		wp_localize_script( 'es-property-metabox', 'RealtekMetabox', array(
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
 			'tr' => es_js_get_translations(),
 			'nonces' => array(
@@ -129,8 +129,8 @@ class Es_Assets {
 		) );
 
 		wp_register_script( 'es-share-script', 'https://static.addtoany.com/menu/page.js' );
-		wp_register_script( 'es-magnific', $common . '/magnific-popup/jquery.magnific-popup.min.js', array( 'jquery' ), Estatik::get_version() );
-		wp_register_style( 'es-magnific', $common . '/magnific-popup/magnific-popup.min.css', array(), Estatik::get_version() );
+		wp_register_script( 'es-magnific', $common . '/magnific-popup/jquery.magnific-popup.min.js', array( 'jquery' ), Realtek::get_version() );
+		wp_register_style( 'es-magnific', $common . '/magnific-popup/magnific-popup.min.css', array(), Realtek::get_version() );
 
 		if ( ests( 'google_api_key' ) ) {
 			$public_deps[] = 'es-googlemap-osm';
@@ -150,10 +150,10 @@ class Es_Assets {
 			$public_deps[] = 'clipboard';
 		}
 
-		wp_register_script( 'es-frontend', $public . '/js/public.min.js', $public_deps, Estatik::get_version() );
+		wp_register_script( 'es-frontend', $public . '/js/public.min.js', $public_deps, Realtek::get_version() );
 		wp_enqueue_script( 'es-frontend' );
 
-		wp_register_script( 'es-properties', ES_PLUGIN_URL . 'public/js/ajax-entities.min.js', array( 'es-frontend' ), Estatik::get_version() );
+		wp_register_script( 'es-properties', ES_PLUGIN_URL . 'public/js/ajax-entities.min.js', array( 'es-frontend' ), Realtek::get_version() );
 		wp_enqueue_script( 'es-properties' );
 
 		$localize = array(
@@ -219,7 +219,7 @@ class Es_Assets {
 		$localize['single']['control'] = $control;
 		$localize['search']['fields'] = array_keys( es_get_available_search_fields() );
 
-		wp_localize_script( 'es-frontend', 'Estatik', apply_filters( 'es_front_script_localize', $localize ) );
+		wp_localize_script( 'es-frontend', 'Realtek', apply_filters( 'es_front_script_localize', $localize ) );
 
 		$fonts = es_get_google_fonts();
 		$main_color = ests( 'main_color' );
@@ -425,7 +425,7 @@ class Es_Assets {
             ";
 		}
 
-		wp_enqueue_style( 'es-frontend', $public . '/css/public.min.css', array( 'es-select2', 'es-slick', 'es-magnific' ), Estatik::get_version() );
+		wp_enqueue_style( 'es-frontend', $public . '/css/public.min.css', array( 'es-select2', 'es-slick', 'es-magnific' ), Realtek::get_version() );
 		if ( ! empty( $fonts_style_css ) ) {
 			wp_add_inline_style( 'es-frontend', $fonts_style_css );
 		}

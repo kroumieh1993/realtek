@@ -1,5 +1,5 @@
 <div class="es-step" id="step1">
-    <h1><?php _e( 'Let’s adjust Estatik to your needs', 'es' ); ?></h1>
+    <h1><?php _e( 'Let’s adjust Realtek to your needs', 'es' ); ?></h1>
 
     <div class="es-demo__field-container es-demo__field-container--agent">
         <h2><?php _e( 'Who is your website for?', 'es' ); ?></h2>

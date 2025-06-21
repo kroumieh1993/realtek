@@ -66,10 +66,10 @@
          * @returns {*}
          */
         price: function( value ) {
-            var pos = Estatik.settings.currency_position;
-            var dec = Estatik.settings.currency_dec;
-            var sup = Estatik.settings.currency_sup;
-            var sign = Estatik.settings.currency_sign || Estatik.settings.currency;
+            var pos = Realtek.settings.currency_position;
+            var dec = Realtek.settings.currency_dec;
+            var sup = Realtek.settings.currency_sup;
+            var sign = Realtek.settings.currency_sign || Realtek.settings.currency;
             var space = ! sign ? ' ' : '';
             var price_format = sup + dec;
 
@@ -88,7 +88,7 @@
      * @type {{init: init, breakpoints: *, initLayout: initLayout}}
      */
     var Responsinator = {
-        breakpoints: Estatik.settings.responsive_breakpoints,
+        breakpoints: Realtek.settings.responsive_breakpoints,
         initialized: false,
 
         /**
@@ -319,7 +319,7 @@
         $( '.js-g-recaptcha' ).each( function() {
             var $object = $( this );
             var widget_id = grecaptcha.render( $object.attr( 'id' ), {
-                "sitekey": Estatik.settings.recaptcha_site_key,
+                "sitekey": Realtek.settings.recaptcha_site_key,
                 "callback": function ( token ) {
                     $object.closest( 'form' ).find( '.g-recaptcha-response' ).val( token );
                 }
@@ -354,7 +354,7 @@
             var lat = $( this ).data( 'latitude' );
             var lon = $( this ).data( 'longitude' );
 
-            initMap( map, lon, lat, Estatik.settings.single_property_map_zoom );
+            initMap( map, lon, lat, Realtek.settings.single_property_map_zoom );
         } );
     }
 
@@ -376,13 +376,13 @@
                 zoom: +zoom
             };
 
-            if ( ! Estatik.settings.can_zoom ) {
-                if ( Estatik.settings.map_zoom_min ) {
-                    options.minZoom = +Estatik.settings.map_zoom_min;
+            if ( ! Realtek.settings.can_zoom ) {
+                if ( Realtek.settings.map_zoom_min ) {
+                    options.minZoom = +Realtek.settings.map_zoom_min;
                 }
 
-                if ( Estatik.settings.map_zoom_max ) {
-                    options.maxZoom = +Estatik.settings.map_zoom_max;
+                if ( Realtek.settings.map_zoom_max ) {
+                    options.maxZoom = +Realtek.settings.map_zoom_max;
                 }
             }
 
@@ -590,12 +590,12 @@
     function esLoadLocation( $field, parent_id ) {
         var request_data = {
             action: 'es_get_locations',
-            nonce: Estatik.nonce.get_locations,
+            nonce: Realtek.nonce.get_locations,
             dependency_id: parent_id,
             types: $field.data( 'address-components' )
         };
 
-        $.get( Estatik.settings.ajaxurl, request_data, function( response ) {
+        $.get( Realtek.settings.ajaxurl, request_data, function( response ) {
             $field.html('<option value="">' + $field.data( 'placeholder' ) + '</option>');
             if ( response ) {
                 $field.removeProp( 'disabled' ).removeAttr( 'disabled' );
@@ -635,7 +635,7 @@
     function initSearchBaseLocation( $context ) {
         $context = $context || $( '.js-es-search' );
         $context.each( function() {
-            var priority = Estatik.settings.search_locations_init_priority;
+            var priority = Realtek.settings.search_locations_init_priority;
             for ( var i in priority ) {
                 var $field = $( '.js-es-search-field--' + priority[i] );
                 if ( $field.length ) {
@@ -696,14 +696,14 @@
     }
 
     function initRequestFormPhoneCode() {
-        if ( typeof Estatik.settings !== 'undefined' && +Estatik.settings.request_form_geolocation_enabled && $( '.js-es-request-form' ).length ) {
+        if ( typeof Realtek.settings !== 'undefined' && +Realtek.settings.request_form_geolocation_enabled && $( '.js-es-request-form' ).length ) {
             var local_storage = window.localStorage;
             var country_code = local_storage.getItem( 'country_code' );
 
             if ( country_code ) {
                 setRequestFormPhoneCode( country_code );
             } else {
-                setRequestFormPhoneCode( Estatik.settings.country );
+                setRequestFormPhoneCode( Realtek.settings.country );
 
                 if ( typeof google !== 'undefined' && typeof google.hasOwnProperty( 'maps' ) && navigator.geolocation ) {
                     navigator.geolocation.getCurrentPosition( function( position ) {
@@ -860,7 +860,7 @@
      */
     function displayErrorPopup( message ) {
         var markup = "<div class='es-magnific-popup es-ajax-form-popup es-magnific-popup--error'>" +
-            "<span class='es-icon es-icon_close'></span><h4>" + Estatik.tr.error + "</h4>" +
+            "<span class='es-icon es-icon_close'></span><h4>" + Realtek.tr.error + "</h4>" +
             "<p style='text-align: center;'>" + message + "</p>";
 
         $.magnificPopup.open( {
@@ -1026,7 +1026,7 @@
             $btn.addClass( 'es-btn--preload' ).prop( 'disabled', 'disabled' ).attr( 'disabled', 'disabled' );
             var data = { action: 'es_contact_request_form', entity_id: $btn.data( 'id' ) };
 
-            $.get( Estatik.settings.ajaxurl, data, function( response ) {
+            $.get( Realtek.settings.ajaxurl, data, function( response ) {
                 response = response || {};
                 if ( response.status === 'success' ) {
                     $.magnificPopup.open( {
@@ -1043,7 +1043,7 @@
                                 var $popup = $( this.content[0] );
                                 var $field = $popup.find( '[name="g-recaptcha-response"]' );
                                 if ( $field.length ) {
-                                    window.grecaptcha.execute( Estatik.settings.recaptcha_site_key, { action: 'request_form' }).then(function (token) {
+                                    window.grecaptcha.execute( Realtek.settings.recaptcha_site_key, { action: 'request_form' }).then(function (token) {
                                         $field.val( token );
                                     });
                                 }
@@ -1066,7 +1066,7 @@
             //     closeMarkup: '<span class="es-icon es-icon_close mfp-close"></span>',
             //     ajax: {
             //         settings: {
-            //             url: Estatik.settings.ajaxurl + '?action=es_contact_request_form&entity_id=' + $btn.data( 'id' ),
+            //             url: Realtek.settings.ajaxurl + '?action=es_contact_request_form&entity_id=' + $btn.data( 'id' ),
             //         },
             //     },
             //     callbacks: {
@@ -1195,7 +1195,7 @@
             }
 
             $.ajax( {
-                url: Estatik.settings.ajaxurl,
+                url: Realtek.settings.ajaxurl,
                 type: 'post',
                 data: formData,
                 contentType: false,
@@ -1297,7 +1297,7 @@
             slidesToScroll: 1,
             infinite: true,
             arrows: true,
-            rtl: Estatik.settings.is_rtl,
+            rtl: Realtek.settings.is_rtl,
             adaptiveHeight: true,
             prevArrow: '<span class="es-icon es-icon_chevron-left slick-arrow slick-prev"></span>',
             nextArrow: '<span class="es-icon es-icon_chevron-right slick-arrow slick-next"></span>',
@@ -1356,10 +1356,10 @@
 
             $( this ).addClass( 'es-btn--preload' );
 
-            $.post( Estatik.settings.ajaxurl, {
+            $.post( Realtek.settings.ajaxurl, {
                 action: 'es_remove_saved_search',
                 hash: $( this ).data('hash'),
-                nonce: Estatik.nonce.saved_search
+                nonce: Realtek.nonce.saved_search
             }, function( response ) {
                 response = response || {};
 
@@ -1378,7 +1378,7 @@
                     alert( response.message );
                 }
             }, 'json' ).fail( function() {
-                alert( Estatik.tr.unknown_error );
+                alert( Realtek.tr.unknown_error );
             } ).always( function() {
                 $btn.removeClass( 'es-btn--preload' );
             } );
@@ -1420,7 +1420,7 @@
 
             $btn.prop( 'disabled', 'disabled' );
 
-            $.post( Estatik.settings.ajaxurl, data, function( response ) {
+            $.post( Realtek.settings.ajaxurl, data, function( response ) {
                 response = response || {};
 
                 if ( response.status === 'success' ) {
@@ -1483,7 +1483,7 @@
             $wrapper.find( '.es-auth__item' ).addClass( 'es-auth__item--hidden' );
             $wrapper.find( '.es-auth__' + auth_item ).removeClass( 'es-auth__item--hidden' );
 
-            window.EstatikFramework.initFields( $wrapper );
+            window.RealtekFramework.initFields( $wrapper );
 
             resizeCaptcha( $( '.es-recaptcha-wrapper .js-g-recaptcha' ) );
             return false;
@@ -1502,7 +1502,7 @@
             }
         });
 
-        if ( typeof Estatik.settings !== 'undefined' && Estatik.settings.address_autocomplete_enabled ) {
+        if ( typeof Realtek.settings !== 'undefined' && Realtek.settings.address_autocomplete_enabled ) {
             $( document ).on( 'click', '.js-autocomplete-item', function() {
                 var $field = $( this ).closest( '.es-field, .js-es-field, .js-search-field-container' ).find( 'input' );
                 $field.val( $( this ).data( 'query' ) ).trigger( 'focusout' );
@@ -1523,7 +1523,7 @@
                 }
 
                 if ( value.length >= 2 ) {
-                    autocomplemeXHR = $.get( Estatik.settings.ajaxurl, {
+                    autocomplemeXHR = $.get( Realtek.settings.ajaxurl, {
                         q: value,
                         action: 'es_search_address_components',
                     }, function( response ) {
@@ -1575,7 +1575,7 @@
 
         $( document ).on( 'click', '.es-btn--active.js-es-wishlist--confirm, .es-wishlist-link--active.js-es-wishlist--confirm', function() {
             var $btn = $( this );
-            var tr = Estatik.tr;
+            var tr = Realtek.tr;
             var entity = $btn.data( 'entity' );
             var message = tr['remove_saved_' + entity];
 
@@ -1603,8 +1603,8 @@
         $( document ).on( 'click', '[data-confirm-message]', function(e) {
             var message = $( this ).data( 'confirm-message' );
             var title = $( this ).data( 'confirm-title' );
-            var button_label = $( this ).data( 'confirm-button' ) || Estatik.tr.got_it;
-            var cancel_button_label = $( this ).data( 'confirm-cancel-button' ) || Estatik.tr.cancel;
+            var button_label = $( this ).data( 'confirm-button' ) || Realtek.tr.got_it;
+            var cancel_button_label = $( this ).data( 'confirm-cancel-button' ) || Realtek.tr.cancel;
             var icon = $( this ).data( 'confirm-button-icon' ) || 'es-icon es-icon_circle-x';
 
             var markup = "<div class='es-magnific-popup es-magnific-popup--confirm'>" +
@@ -1674,7 +1674,7 @@
                 action: 'es_compare_delete_action',
             };
 
-            $.post( Estatik.settings.ajaxurl, data, function ( response ) {
+            $.post( Realtek.settings.ajaxurl, data, function ( response ) {
                 response = response || {};
 
                 if ( response.status === 'success' ) {
@@ -1685,7 +1685,7 @@
                 } else if ( response.status === 'error' ) {
                     displayErrorPopup( response.message );
                 } else {
-                    displayErrorPopup( Estatik.tr.unknown_error );
+                    displayErrorPopup( Realtek.tr.unknown_error );
                 }
             }, 'json' ).always( function() {
                 $link.removeClass( 'es-preload-link--preload' );
@@ -1711,7 +1711,7 @@
                 $el.addClass( 'es-wishlist-link--preload' );
             }
 
-            $.post( Estatik.settings.ajaxurl, data, function( response ) {
+            $.post( Realtek.settings.ajaxurl, data, function( response ) {
                 response = response || {};
 
                 if ( response.status === 'success' ) {
@@ -1735,7 +1735,7 @@
                 } else if ( response.status === 'error' ) {
                     displayErrorPopup( response.message );
                 } else {
-                    displayErrorPopup( Estatik.tr.unknown_error );
+                    displayErrorPopup( Realtek.tr.unknown_error );
                 }
             }, 'json' ).always( function() {
                 $el.removeClass( 'es-btn--preload' ).removeClass( 'es-wishlist-link--preload' );
@@ -1762,7 +1762,7 @@
                 $el.addClass( 'es-wishlist-link--preload' );
             }
 
-            $.post( Estatik.settings.ajaxurl, data, function( response ) {
+            $.post( Realtek.settings.ajaxurl, data, function( response ) {
                 response = response || {};
 
                 if ( response.status === 'success' ) {
@@ -1839,7 +1839,7 @@
                 tLoading: 'Loading image #%curr%...',
                 mainClass: 'es-property-magnific',
                 closeMarkup: '<button class="es-btn es-btn--default es-btn--transparent mfp-close">%title%</button>',
-                tClose: '<span class="es-mfg-close-ico" data-trigger-click=".mfp-close">&#x2715</span> ' + Estatik.tr.close,
+                tClose: '<span class="es-mfg-close-ico" data-trigger-click=".mfp-close">&#x2715</span> ' + Realtek.tr.close,
                 gallery: {
                     enabled: true,
                     navigateByImgClick: true,
@@ -1858,7 +1858,7 @@
                         '<div class="mfp-top-bar__inner">' +
                         '<div class="mfp-close"></div>' +
                         '<div class="mfp-counter"></div>' +
-                        '<div class="mfp-control">' + Estatik.single.control + '</div>' +
+                        '<div class="mfp-control">' + Realtek.single.control + '</div>' +
                         '</div>' +
                         '</div>' +
                         '<div class="mfp-figure">' +
@@ -1869,7 +1869,7 @@
                 }
             };
 
-            var lightbox_disabled = +Estatik.settings.is_lightbox_disabled;
+            var lightbox_disabled = +Realtek.settings.is_lightbox_disabled;
 
             if ( ! lightbox_disabled ) {
                 $('.js-es-images, .js-es-property-gallery').magnificPopup( magnific_popup );
@@ -2011,7 +2011,7 @@
             $response_container.html( false );
             var $form = $( this );
 
-            $.post( Estatik.settings.ajaxurl, $( this ).serialize(), function( response ) {
+            $.post( Realtek.settings.ajaxurl, $( this ).serialize(), function( response ) {
                 if ( response.message ) {
                     $.magnificPopup.open( {
                         closeMarkup: '<span class="es-icon es-icon_close mfp-close"></span>',
@@ -2029,7 +2029,7 @@
                 $submit_btn.removeProp( 'disabled' ).removeAttr( 'disabled' );
 
                 if ( typeof grecaptcha !== 'undefined' && $form.find( '.js-g-recaptcha' ).length ) {
-                    if ( Estatik.settings.recaptcha_version === 'v2' ) {
+                    if ( Realtek.settings.recaptcha_version === 'v2' ) {
                         grecaptcha.reset( $form.find( '.js-g-recaptcha' ).data( 'recaptcha-id' ) );
                     }
                 }
@@ -2101,7 +2101,7 @@
             var $form = $( this );
             e.preventDefault();
 
-            $.post( Estatik.settings.ajaxurl, $form.serialize(), function( response ) {
+            $.post( Realtek.settings.ajaxurl, $form.serialize(), function( response ) {
                 $form.find( '.js-es-saved-search__notify' ).html( response.message );
                 setTimeout( function() {
                     $form.find( '.js-es-saved-search__notify' ).html('');
@@ -2110,7 +2110,7 @@
         } );
     } );
 
-    window.EstatikResponsinator = Responsinator;
-    window.EstatikFormatter = Formatter;
+    window.RealtekResponsinator = Responsinator;
+    window.RealtekFormatter = Formatter;
     window.initPropertiesSlideshow = initPropertiesSlideshow;
 } )( jQuery );

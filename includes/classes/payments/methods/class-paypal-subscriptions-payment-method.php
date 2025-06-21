@@ -56,7 +56,7 @@ class Es_Paypal_Subscription_Payment_Method implements Es_Payment_Method {
 		if ( ! is_wp_error( $order_id ) ) {
 			$order = es_get_order( $order_id );
 			$homeurl = trailingslashit( site_url() );
-//			$homeurl = 'https://estatik.com/';
+//			$homeurl = 'https://realtek.com/';
 
 			try {
 				$subscription = $api->subscription()->create( array(

@@ -11,10 +11,10 @@ class Es_Subscriptions_Shortcode extends Es_Shortcode {
 	public function get_content() {
 		ob_start();
 		es_load_template( 'front/shortcodes/subscriptions/index.php' );
-		wp_enqueue_script( 'es-subscriptions', ES_PLUGIN_URL . '/public/js/subscriptions.min.js', array( 'jquery' ), Estatik::get_version() );
-		wp_localize_script( 'es-subscriptions', 'EstatikSubscriptions', array(
+		wp_enqueue_script( 'es-subscriptions', ES_PLUGIN_URL . '/public/js/subscriptions.min.js', array( 'jquery' ), Realtek::get_version() );
+		wp_localize_script( 'es-subscriptions', 'RealtekSubscriptions', array(
 			'tr' => array(
-				'free' => _x( 'FREE', 'estatik featured listings', 'es' ),
+				'free' => _x( 'FREE', 'realtek featured listings', 'es' ),
 			),
 			'settings' => array(
 				'currency' => ests( 'currency' ),

@@ -140,8 +140,8 @@ class Es_Template_Loader {
 	 * @return string
 	 */
 	public static function featured_image_filter( $html ) {
-		$isnt_estatik_entity = ! es_is_single_property() && ! es_is_single_agent() && ! es_is_single_agency();
-		if ( self::in_content_filter() || $isnt_estatik_entity || ! is_main_query() ) {
+		$isnt_realtek_entity = ! es_is_single_property() && ! es_is_single_agent() && ! es_is_single_agency();
+		if ( self::in_content_filter() || $isnt_realtek_entity || ! is_main_query() ) {
 			return $html;
 		}
 

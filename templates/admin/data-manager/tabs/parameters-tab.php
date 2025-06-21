@@ -30,7 +30,7 @@
     'label' => __( 'Use icons or check marks for amenities and features', 'es' ),
     'attributes' => array(
 	    'data-toggle-container' => '#es-data-manager-icon-types',
-        'data-save-container' => 'estatik-settings',
+        'data-save-container' => 'realtek-settings',
         'data-save-field' => 'is_terms_icons_enabled',
     ),
 ) );
@@ -40,7 +40,7 @@ es_settings_field_render( 'term_icon_type', array(
     'type' => 'radio-bordered',
     'after' => '</div>',
     'attributes' => array(
-	    'data-save-container' => 'estatik-settings',
+	    'data-save-container' => 'realtek-settings',
 	    'data-save-field' => 'term_icon_type',
     ),
 ) ); ?>

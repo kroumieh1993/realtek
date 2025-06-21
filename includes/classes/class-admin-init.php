@@ -24,16 +24,16 @@ class Es_Admin {
     }
 
 	/**
-	 * Cron handler for search remote estatik admin notices.
+	 * Cron handler for search remote realtek admin notices.
      *
      * @return void
 	 */
     public static function check_for_notices() {
         $url = add_query_arg( array(
-            'version' => Estatik::get_plugin_type(),
-            'type' => Estatik::get_plugin_type(),
-            'product' => 'estatik-plugin',
-        ), 'https://estatik.net/request-banner.php' );
+            'version' => Realtek::get_plugin_type(),
+            'type' => Realtek::get_plugin_type(),
+            'product' => 'realtek-plugin',
+        ), 'https://realtek.net/request-banner.php' );
 	    $notices = wp_remote_get( $url );
 
         if ( ! $notices instanceof WP_Error ) {
@@ -41,9 +41,9 @@ class Es_Admin {
             $response = json_decode( $response );
 
             if ( $response && ! empty( $response->banners ) ) {
-                update_option( 'estatik-banners', $response );
+                update_option( 'realtek-banners', $response );
             } else {
-	            update_option( 'estatik-banners', null );
+	            update_option( 'realtek-banners', null );
             }
         }
     }
@@ -54,7 +54,7 @@ class Es_Admin {
      * @return void
 	 */
     public static function render_notices() {
-        $banners = get_option( 'estatik-banners' );
+        $banners = get_option( 'realtek-banners' );
         if ( $banners && ! empty( $banners->banners ) ) {
             $banners = (array) $banners->banners;
             $curtime = time();

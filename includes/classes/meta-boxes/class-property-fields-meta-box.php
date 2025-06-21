@@ -86,7 +86,7 @@ class Es_Property_Fields_Meta_Box extends Es_Entity_Fields_Meta_Box {
 		parent::enqueue_scripts();
 
 		wp_enqueue_script( 'es-property-metabox' );
-		wp_localize_script( 'es-property-metabox', 'EstatikMetabox', array(
+		wp_localize_script( 'es-property-metabox', 'RealtekMetabox', array(
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
 			'tr' => es_js_get_translations(),
 			'nonces' => array(

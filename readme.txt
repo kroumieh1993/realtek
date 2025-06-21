@@ -1,6 +1,6 @@
-===Estatik Real Estate Plugin===
-Contributors: Estatik
-Donate link: http://estatik.net/
+===Realtek Real Estate Plugin===
+Contributors: Realtek
+Donate link: http://realtek.net/
 Tags: real estate, idx, MLS, listings, RETS, webAPI, property, realtor
 Requires at least: 5.4
 Tested up to: 6.1
@@ -9,16 +9,16 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-You will love its clean design, simple use, and colorful themes. WordPress real estate plugin Estatik is a worthy choice for single agents and portals
+You will love its clean design, simple use, and colorful themes. WordPress real estate plugin Realtek is a worthy choice for single agents and portals
 
 == Description ==
 
 
 
 User-friendly intuitive interface. Clean design. Flexible functionality. The full-featured WordPress real estate plugin with smooth integration with Elementor Page Builder.
-Visit [www.estatik.net](http://estatik.net/) for more information.
+Visit [www.realtek.net](http://realtek.net/) for more information.
 
-Visit [demo](http://major.estatik.net/) of Estatik plugin built with Elementor Hello Theme.
+Visit [demo](http://major.realtek.net/) of Realtek plugin built with Elementor Hello Theme.
 
 
 
@@ -68,14 +68,14 @@ Visit [demo](http://major.estatik.net/) of Estatik plugin built with Elementor H
 
 
 
-= Estatik Native Themes: =
+= Realtek Native Themes: =
 
 
-* Estatik Realtor Theme - [DEMO](http://realtor.estatik.net)
+* Realtek Realtor Theme - [DEMO](http://realtor.realtek.net)
 
 
 
-It also works with most of WordPress themes but if you have any issues, just [drop us a message](https://estatik.net/contact-us/) and we will add support of your theme for free.
+It also works with most of WordPress themes but if you have any issues, just [drop us a message](https://realtek.net/contact-us/) and we will add support of your theme for free.
 
 
 
@@ -83,8 +83,8 @@ It also works with most of WordPress themes but if you have any issues, just [dr
 
 
 
-Please visit this [documentation page](https://estatik.net/estatik-plugin-documentation/) to get a full list of shortcodes.
-Full list of shortcodes can be found [here](https://estatik.net/estatik-plugin-documentation/)
+Please visit this [documentation page](https://realtek.net/realtek-plugin-documentation/) to get a full list of shortcodes.
+Full list of shortcodes can be found [here](https://realtek.net/realtek-plugin-documentation/)
 
 
 
@@ -111,15 +111,15 @@ Full list of shortcodes can be found [here](https://estatik.net/estatik-plugin-d
 
 
 
-= Do all Estatik Themes support Estatik 4.0? =
+= Do all Realtek Themes support Realtek 4.0? =
 
-No, not all Estatik Themes support Estatik 4.0 version. Currently, only Estatik Realtor Theme supports 4.0 ver. We will also add Portal Theme support. All other themes are incompatible with 4.0 ver. but you still can use it and count on our support.
+No, not all Realtek Themes support Realtek 4.0 version. Currently, only Realtek Realtor Theme supports 4.0 ver. We will also add Portal Theme support. All other themes are incompatible with 4.0 ver. but you still can use it and count on our support.
 If you upgraded the plugin using Native Theme, for example, you can deactivate the plugin and install back the previous version. Nothing will be lost.
 
 
 = After upgrading to 4.0 something is wrong with properties images and pages. =
 
-Make sure that you proceeded with Migration properly. (Here)[https://estatik.net/docs-category/migration-from-3-x-to-4-ver/] is our quick guide how you need to migrate your listings and configuration. 
+Make sure that you proceeded with Migration properly. (Here)[https://realtek.net/docs-category/migration-from-3-x-to-4-ver/] is our quick guide how you need to migrate your listings and configuration. 
 
 
 = Can I get back to 3.x version after upgrading to 4.0 ? =
@@ -128,7 +128,7 @@ Yes, you can do it any time.
 
 
 
-= Does Estatik work with any Wordpress theme? =
+= Does Realtek work with any Wordpress theme? =
 
 
 
@@ -140,7 +140,7 @@ Yes, it works smoothly with most of WordPress themes and page builders.
 
 
 
-You can compare all available versions here >> http://estatik.net/choose-your-version/.
+You can compare all available versions here >> http://realtek.net/choose-your-version/.
 
 
 
@@ -148,15 +148,15 @@ You can compare all available versions here >> http://estatik.net/choose-your-ve
 
 
 
-With Estatik PRO or Premium version you get free support for 6 months (PRO) / 1 year (Premium) and for 1 website. Support for Simple free version is limited to WordPress forum. Please post your question here at Support forum, or contact us >> http://estatik.net/contact-us/ and we will help you with issues.
+With Realtek PRO or Premium version you get free support for 6 months (PRO) / 1 year (Premium) and for 1 website. Support for Simple free version is limited to WordPress forum. Please post your question here at Support forum, or contact us >> http://realtek.net/contact-us/ and we will help you with issues.
 
 
 
-= How can I import MLS listings using Estatik plugin? =
+= How can I import MLS listings using Realtek plugin? =
 
 
 
-We developed [Estatik Premium](https://estatik.net/product/estatik-premium-rets/) version for MLS listings import via RETS or RESO Web API. 
+We developed [Realtek Premium](https://realtek.net/product/realtek-premium-rets/) version for MLS listings import via RETS or RESO Web API. 
 
 
 
@@ -208,7 +208,7 @@ FIXED: Responsive js refactored
 = 4.0.0 & 4.0.1 (November, 15, 2022) = 
 
  
-This major release contains significant code changes! Make sure you have a backup before upgrade and follow our Migration instructions [here](https://estatik.net/docs-category/migration-from-3-x-to-4-ver/)
+This major release contains significant code changes! Make sure you have a backup before upgrade and follow our Migration instructions [here](https://realtek.net/docs-category/migration-from-3-x-to-4-ver/)
 
 NEW: Front-and back-end interface design updated (all versions)
 NEW: Agencies support added (PRO & Premium)
@@ -429,7 +429,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 * FIX: Elementor widgets style tab added (all features)
 * FIX: Excluded es_get_default_thumbnail_id function from plugin (all versions)
 * FIX: Search shortcode issue fixed (all versions)
-* FIX: Estatik Search widget fields order in Elementor fixed (all versions)
+* FIX: Realtek Search widget fields order in Elementor fixed (all versions)
 * FIX: Maps issue with address components for UK, Spain fixed (all versions)
 * FIX: Select2 selected options width fixed (all versions)
 * FIX: Default fields deletion process from front-end management fixed (PRO & Premium)
@@ -474,14 +474,14 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 * NEW: Shortcode to show specific listings by a title added (all version)
 * NEW: Queue Limit Field in Synchronization added (Premium)
 * NEW: Subscription duration in Paypal Subscription added (PRO & Premium)
-* NEW: URL to Support Area in Estatik Dashboard added (all versions)
+* NEW: URL to Support Area in Realtek Dashboard added (all versions)
 * FIX: Description issue fixed (all versions)
 * FIX: Address issue when map icon moved fixed (PRO & Premium)
 * FIX: Shortcode for displaying listings with labels fixed (all versions)
 * FIX: CREA DDF synchronizer issue fixed (Premium)
 * FIX: Profile name before flash messages added (Premium)
 * FIX: Single property shortcode render for Avada theme & Fusion Page Builder fixed (all versions)
-* FIX: Estatik Slideshow widget issue fixed (all versions)
+* FIX: Realtek Slideshow widget issue fixed (all versions)
 
 
 
@@ -500,7 +500,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 
 
 * NEW: Elementor Page Builder and Theme support added (all versions) 
-[Learn more >>](https://estatik.net/estatik-elementor-compatible-release-ready/)
+[Learn more >>](https://realtek.net/realtek-elementor-compatible-release-ready/)
 * NEW: Filter 'Exclude fields' to Manual/Automatic import added (Premium)
 * NEW: Option "Skip properties without images" in Settings added (Premium)
 * FIX: Images import fix added (Premium)
@@ -554,7 +554,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 * NEW: Hide map option in Settings added (all versions)
 * NEW: Province address component in Data Manager added (all versions)
 * NEW: Details to Automatic import under Executed Items added (Premium version)
-* FIX: Show filter issue in Estatik Shortcode Builder fixed 
+* FIX: Show filter issue in Realtek Shortcode Builder fixed 
 * FIX: Jquery hash link warning (all versions)
 * FIX: Mobile responsive layout for Slideshow fixed (PRO & Premium)
 * FIX: Map Cluster icon 404 error fixed (PRO & Premium)
@@ -602,7 +602,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 * FIX: Paddings in Accesspress tabs fixed (all versions)
 * FIX: Tags issue fixed (PRO&Premium)
 * FIX: Google address geocoding request URL fixed (PRO&Premium)
-* FIX: Estatik Search widget issue fixed (PRO&Premium)
+* FIX: Realtek Search widget issue fixed (PRO&Premium)
 * minor fixes
 
 
@@ -620,7 +620,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 * FIX: Footer on the first page of the pdf file fixed (PRO & Premium)
 * FIX: “Combine CSS File” is not broken layout in the SG Optimizer
 * FIX: “Choose value” in the search form fields fixed (all versions)
-* FIX: “Estatik Search” widget issue fixed (all versions)
+* FIX: “Realtek Search” widget issue fixed (all versions)
 * minor fixes
 
 
@@ -739,7 +739,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 
 * NEW: Custom email field to Request widget added (all versions)
 * NEW: Drag & drop Google Maps marker in admin area added (all versions)
-* NEW: new Estatik Realtor Theme support added (all versions)
+* NEW: new Realtek Realtor Theme support added (all versions)
 * NEW: Social fields and icons added to agent profile (PRO & Premium)
 * NEW: Property title & image became clickable on map popup windows (PRO & Premium)
 * NEW: Removal option for extra area dimensions in search widget added (all versions)
@@ -821,7 +821,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 
 
 * Security fixes
-* Removed templates for estatik taxonomies. Created taxonomy.php as base template for each estatik taxonomy.
+* Removed templates for realtek taxonomies. Created taxonomy.php as base template for each realtek taxonomy.
 * Fixed Single property gallery dimensions.
 * minor fixes
 
@@ -831,7 +831,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 
 
 
-* New [Estatik Portal Theme](https://estatik.net/product/portal-theme/) support added
+* New [Realtek Portal Theme](https://realtek.net/product/portal-theme/) support added
 * Added price range selection to Slideshow widget & shortcode
 * Added custom field parameter to [es_my_listing] shortcode 
 * To top link fixed
@@ -855,7 +855,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 
 * Private field/section added (available for Admin & Agents only)
 * Address shortcodes fixed
-* Estatik global js var localized for plugin js files
+* Realtek global js var localized for plugin js files
 * Pagination GET argument fixed
 * Fixed [es_single] shortcode execute condition for single property page
 * Company attribute added to es_agents shortcode (PRO & Premium)
@@ -1016,13 +1016,13 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 * Area and lot size fields steps fixed
 * Edit property link added to admin bar
 * Added option to override templates in child theme:
-- estatik/property/gallery.php
-- estatik/property/tabs.php
-- estatik/property/share.php
-- estatik/content-single.php
-- estatik/archive-properties.php
-- estatik/content-archive.php
-- estatik/shortcodes/register.php
+- realtek/property/gallery.php
+- realtek/property/tabs.php
+- realtek/property/share.php
+- realtek/content-single.php
+- realtek/archive-properties.php
+- realtek/content-archive.php
+- realtek/shortcodes/register.php
 * Bug with custom fields assignment in FB (PRO & Premium)
 * Fixed issue with images import duplication (Premium)
 * Entitiy RETS data popup implemented (Premium)
@@ -1074,7 +1074,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 * Responive layout for es_search_form shortcode fixed
 * Dimensions & Currencies removal option deleted
 * Added option for restore basic fields in FB
-* Added color settings fix to support new Estatik Project theme
+* Added color settings fix to support new Realtek Project theme
 * ShelterZoom widget support added (PRO & Premium)
 * Agent drop-down bug fixed in search form (PRO & Premium)
 * minor fixes
@@ -1312,7 +1312,7 @@ FIX: IN query operator implemented for Trestle web API (Premium)
 * Other fixes..
 
 
-Please read our short review of this release [here >>](https://estatik.net/meet-new-version-of-estatik-pro-3-0/) 
+Please read our short review of this release [here >>](https://realtek.net/meet-new-version-of-realtek-pro-3-0/) 
 
 
 
@@ -1356,7 +1356,7 @@ Please read our short review of this release [here >>](https://estatik.net/meet-
 * Automatic/manual approval of listings added (PRO)
 
 
-Please read detailed description of release [here >>](https://estatik.net/advanced-estatik-2-3-0-released-create-subscriptions-get-paid/)
+Please read detailed description of release [here >>](https://realtek.net/advanced-realtek-2-3-0-released-create-subscriptions-get-paid/)
 
 
 
@@ -1397,7 +1397,7 @@ Please read detailed description of release [here >>](https://estatik.net/advanc
 * Deprecated method for wp_widget updated 
 
 
-Please read full description of new release [here](http://estatik.net/estatik-simple-pro-ver-2-2-0-released/)
+Please read full description of new release [here](http://realtek.net/realtek-simple-pro-ver-2-2-0-released/)
 
 
 
@@ -1419,7 +1419,7 @@ Please read full description of new release [here](http://estatik.net/estatik-si
 
 
 
-Please read full description of new release [here](http://estatik.net/estatik-2-1-release-no-more-coding-from-now/)
+Please read full description of new release [here](http://realtek.net/realtek-2-1-release-no-more-coding-from-now/)
 
 
 
@@ -1448,7 +1448,7 @@ Please read full description of new release [here](http://estatik.net/estatik-2-
 
 
 
-Please read full description of new release [here](http://estatik.net/estatik-2-0-terrific-released-map-view-lots-of-major-fixes-done/)
+Please read full description of new release [here](http://realtek.net/realtek-2-0-terrific-released-map-view-lots-of-major-fixes-done/)
 
 
 

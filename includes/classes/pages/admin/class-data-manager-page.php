@@ -453,10 +453,10 @@ class Es_Data_Manager_Page {
 	public static function render() {
         $f = es_framework_instance();
         $f->load_assets();
-		wp_enqueue_style( 'es-data-manager', plugin_dir_url( ES_FILE ) . 'admin/css/data-manager.min.css', array( 'es-admin', 'estatik-popup' ), Estatik::get_version() );
-		wp_enqueue_script( 'es-data-manager', plugin_dir_url( ES_FILE ) . 'admin/js/data-manager.min.js', array( 'jquery', 'es-admin', 'estatik-popup' ), Estatik::get_version() );
+		wp_enqueue_style( 'es-data-manager', plugin_dir_url( ES_FILE ) . 'admin/css/data-manager.min.css', array( 'es-admin', 'realtek-popup' ), Realtek::get_version() );
+		wp_enqueue_script( 'es-data-manager', plugin_dir_url( ES_FILE ) . 'admin/js/data-manager.min.js', array( 'jquery', 'es-admin', 'realtek-popup' ), Realtek::get_version() );
 
-		wp_localize_script( 'es-data-manager', 'Estatik_Data_Manager', array(
+		wp_localize_script( 'es-data-manager', 'Realtek_Data_Manager', array(
 			'tr' => es_js_get_translations(),
 			'nonce' => array(
 				'delete_terms' => wp_create_nonce( 'es_data_manager_delete_terms' ),

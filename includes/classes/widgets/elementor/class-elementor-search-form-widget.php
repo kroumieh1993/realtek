@@ -44,7 +44,7 @@ class Elementor_Es_Search_Form_Widget extends Elementor_Es_Base_Widget {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return _x( 'Estatik Search', 'widget name', 'es' );
+		return _x( 'Realtek Search', 'widget name', 'es' );
 	}
 
     /**

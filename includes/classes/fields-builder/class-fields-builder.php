@@ -59,7 +59,7 @@ class Es_Fields_Builder extends Es_Fields_Builder_Item {
 	 */
 	public static function get_table_name() {
 		global $wpdb;
-		return apply_filters( 'es_fields_builder_get_table_name', $wpdb->prefix . 'estatik_fb_fields' );
+		return apply_filters( 'es_fields_builder_get_table_name', $wpdb->prefix . 'realtek_fb_fields' );
 	}
 
 	/**
