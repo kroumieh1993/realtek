@@ -1,0 +1,68 @@
+.es-entities-list {
+  .entity-box {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.entity-box {
+  font-size: 10px;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(38, 50, 56, 0.2);
+  max-width: 360px;
+  width: 100%;
+  cursor: move;
+  background: #fff;
+
+  .entity-box__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .entity-box__image {
+    flex: 0;
+    padding-right: 16px;
+
+    img {
+      width: 5.6em;
+      height: 5.6em;
+      border-radius: 50%;
+      display: block;
+      max-width: unset;
+    }
+  }
+
+  .entity-box__content {
+    padding-right: 25px;
+    flex: 1;
+
+    b {
+      color: #263238;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    p {
+      color: #78909C;
+      margin: 0;
+      font-size: 1.2em;
+    }
+  }
+
+  .entity-box__delete {
+    font-size: 1.7em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #263238;
+    text-decoration: none;
+  }
+}

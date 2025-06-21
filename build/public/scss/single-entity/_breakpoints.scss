@@ -1,0 +1,156 @@
+.es-entity-single--xsm, .es-entity-single--sm {
+  .es-entities .es-entity {
+    .es-entity__content {
+      margin-bottom: 2.4em;
+    }
+
+    .es-entity__contact {
+      margin-top: 1.6em;
+    }
+
+    .es-entity__inner {
+      & > .es-control {
+        position: static;
+      }
+    }
+  }
+
+  .es-entity-section__content {
+    .es-entity-fields li.es-entity-field:not(.es-entity-field--post_content):not(.es-entity-field--video_link) span {
+      flex: 1 0 50%;
+    }
+  }
+
+}
+
+.es-entity-single--xsm {
+  .es-entity-section__title {
+    font-size: 1.6em;
+    line-height: 1.62em;
+  }
+
+  .es-entity-field__label {
+    flex: 0 0 130px;
+  }
+
+  &.es-entity-single .es-entities .es-entity {
+    .es-control {
+      margin-bottom: 16px;
+    }
+  }
+
+  .es-preferred-contact.es-preferred-contact--tel {
+    font-size: 1.6em;
+    line-height: 1.62em;
+  }
+
+  .es-preferred-contact.es-preferred-contact--tel {
+    font-size: 1.6em;
+    line-height: 1.62em;
+  }
+
+  .es-entity-section {
+    margin-top: 24px;
+
+    .es-entity-section__content {
+      margin-top: 16px;
+    }
+  }
+
+  .es-entities .es-entity {
+    .es-entity__image img {
+      width: 8em;
+      height: 8em;
+    }
+  }
+}
+
+.es-entity-single--sm {
+  .es-entity-section__title {
+    font-size: 1.6em;
+    line-height: 1.62em;
+  }
+
+  .es-entity-field__label {
+    flex: 0 0 240px;
+  }
+
+  &.es-entity-single .es-entities .es-entity {
+    .es-control {
+      margin-bottom: 16px;
+    }
+  }
+
+  .es-preferred-contact.es-preferred-contact--tel {
+    font-size: 1.6em;
+    line-height: 1.62em;
+  }
+
+  .es-entity-section {
+    margin-top: 24px;
+
+    .es-entity-section__content {
+      margin-top: 16px;
+    }
+  }
+
+  .es-entities .es-entity {
+    .es-entity__image img {
+      width: 8em;
+      height: 8em;
+    }
+  }
+}
+
+.es-entity-single--md {
+  .es-entity-section__title {
+    font-size: 1.8em;
+    line-height: 1.67em;
+  }
+
+  .es-entity-field__label {
+    flex: 0 0 210px;
+  }
+
+  .es-preferred-contact.es-preferred-contact--tel {
+    font-size: 1.6em;
+    line-height: 1.67em;
+  }
+
+  .es-entity-section {
+    margin-top: 32px;
+  }
+
+  .es-entities .es-entity {
+    .es-entity__image img {
+      width: 15em;
+      height: 15em;
+    }
+  }
+}
+
+.es-entity-single--lg {
+  .es-entity-section__title {
+    font-size: 1.8em;
+    line-height: 1.67em;
+  }
+
+  .es-preferred-contact.es-preferred-contact--tel {
+    font-size: 1.8em;
+    line-height: 1.67em;
+  }
+
+  .es-entities .es-entity {
+    .es-entity__image img {
+      width: 13em;
+      height: 13em;
+    }
+  }
+}
+
+.es-entity-single--xl {
+  .es-entity-section__title {
+    font-size: 2.2em;
+    line-height: 1.55em;
+  }
+}

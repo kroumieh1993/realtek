@@ -1,0 +1,125 @@
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@import "reset";
+@import "ui";
+@import "../../common/scss/bootstrap/bootstrap-customized";
+@import "partials/buttons";
+@import "partials/breadcrumbs";
+@import "partials/listings";
+@import "partials/entities";
+@import "partials/magnific-popup";
+@import "partials/share-popup";
+@import "partials/comments";
+@import "partials/review-form";
+@import "partials/table";
+@import "partials/entity-box";
+@import "shortcodes/properties-slider";
+@import "shortcodes/properties-slideshow";
+@import "shortcodes/request-form";
+@import "shortcodes/search";
+@import "shortcodes/half-map";
+@import "shortcodes/authenticate";
+@import "shortcodes/profile";
+@import "shortcodes/management";
+@import "shortcodes/pricing";
+@import "shortcodes/locations-grid";
+@import "shortcodes/compare";
+@import "../../common/scss/es-icon";
+@import "../../common/scss/es-custom-icon";
+
+@import "single-property/content";
+@import "single-property/gallery";
+@import "single-property/breakpoints";
+
+@import "single-entity/content";
+@import "single-entity/breakpoints";
+
+.es-wrap {
+    font-size: 10px;
+}
+
+.heading-font, .content-font {
+    letter-spacing: initial;
+}
+
+.entry-content [class^="es-"], [class^="es-"] {
+    a:not(.es-btn):not(.page-numbers):not(.es-leave-border) {
+        text-decoration: none;
+        box-shadow: none;
+        outline: none;
+        border: 0;
+    }
+}
+
+.es-privacy-policy-container {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .es-field {
+        margin: 0;
+        padding: 0 !important;
+    }
+}
+
+.es-icon_sharing, .es-icon_marker {
+    position: relative;
+    left: 2px;
+}
+
+.es-hidden {
+  display: none !important;
+}
+
+.es-powered {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 1.67em;
+    color: #B0BEC5;
+    margin-top: 2.5em;
+}
+
+.es-full-content-link {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    .es-icon {
+        margin-left: 8px;
+        font-size: 1.2em;
+        position: relative;
+        top: 1px;
+
+        &.es-icon_chevron-top {
+            top: 2px;
+            font-size: 0.9em;
+        }
+    }
+}
+
+.es-wishlist-link, .es-preload-link {
+
+    &--active {
+        .es-icon_heart {
+            @extend .es-icon_heart-filled;
+        }
+    }
+
+    &--preload {
+        .es-icon {
+            animation:spin 1s linear infinite;
+            @extend .es-icon_preload;
+        }
+    }
+}
+
+.es-center {
+    text-align: center;
+}

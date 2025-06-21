@@ -1,0 +1,85 @@
+@import "partials/entity-table";
+
+.estatik_page_es_subscriptions, .listings_page_es_subscriptions {
+  background: #fff;
+
+  .es-field.es-field__trial_period {
+    min-width: 110px;
+    flex: 1;
+
+    .es-radio--bordered label, .es-field.es-field--checkbox-item-bordered .es-radio--bordered label {
+      padding: 0 13px;
+    }
+  }
+
+  .es-inline-fields {
+    display: flex;
+    margin: 0 -15px;
+
+    & > div {
+      padding: 0 15px;
+      box-sizing: content-box;
+      flex: 1;
+      width: 100%;
+      max-width: 380px;
+    }
+  }
+
+  .es-entity-table {
+    .es-default-plan {
+      color: #B0BEC5;
+      font-size: 12px;
+      display: block;
+      margin-top: 8px;
+    }
+
+    .es-label {
+      margin-top: 8px;
+    }
+
+    .es-plan-name {
+      display: block;
+    }
+  }
+
+  .es-wrap {
+    h2 {
+      margin-bottom: 40px;
+
+      .es-icon {
+        margin-right: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    h3 {
+      margin: 40px 0 32px;
+    }
+  }
+
+  .es-fields-wrap {
+    max-width: 380px;
+    width: 100%;
+  }
+
+  #wpcontent {
+    padding: 0;
+    background: #fff;
+  }
+
+  #wpbody-content {
+    padding-bottom: 0;
+  }
+
+  .update-nag {
+    display: none;
+  }
+
+  #wpfooter {
+    display: none;
+  }
+}

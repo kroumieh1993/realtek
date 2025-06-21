@@ -1,0 +1,435 @@
+.es-current-plan {
+  color: #78909C;
+  font-size: 1.2em;
+  line-height: 1.67em;
+
+  * {
+    vertical-align: middle;
+  }
+
+  .es-icon {
+    font-size: 2em;
+  }
+}
+
+.es-wrap .es-checkout {
+  font-size: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.2em;
+    line-height: 1.55em;
+    text-align: center;
+    color: #263238;
+    margin-bottom: 48px;
+  }
+
+  &__info {
+    color: #78909C;
+  }
+
+  &__bottom {
+    text-align: center;
+
+    .es-total {
+      display: block;
+      margin-bottom: 24px;
+    }
+  }
+
+  .es-total {
+    font-weight: bold;
+    font-size: 2.2em;
+    line-height: 1.55em;
+    color: #263238;
+  }
+
+  .es-field.es-field__is_automatic_payment {
+    margin: 34px 0;
+    padding-bottom: 0;
+
+    &>label {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 0.66em;
+  }
+}
+
+.es-pricing {
+  display: inline-flex;
+  margin: 0 auto;
+
+  .es-row-names {
+    text-align: left;
+    padding-right: 30px;
+
+    b {
+      color: #263238;
+      margin-bottom: 4px;
+    }
+
+    p {
+      color: #78909C;
+    }
+
+    b, p {
+      font-size: 1.2em;
+      line-height: 1.67em;
+    }
+
+    .es-row-name--basic {
+      margin-top: 112px;
+    }
+
+    .es-row-name--featured {
+      margin-top: 18px;
+    }
+  }
+}
+
+.es-plans-list {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 -0.8em;
+
+  .es-plan {
+    margin: 0 0.8em;
+
+    &--has-label {
+      margin-top: -13px;
+    }
+  }
+}
+
+.es-subscriptions-checkout {
+  font-size: 10px;
+  text-align: center;
+
+  h2.es-heading-title {
+    font-size: 2.2em;
+    line-height: 1.55em;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
+  .es-heading-icon {
+    font-size: 2.2em;
+    margin-bottom: 16px;
+  }
+
+  .es-heading-subtitle {
+    color: #263238;
+    font-weight: normal;
+    font-size: 1.4em;
+    line-height: 1.71em;
+  }
+
+  .es-total {
+    font-weight: bold;
+    font-size: 2.2em;
+    line-height: 1.55em;
+    color: #263238;
+  }
+
+  .es-field {
+    text-align: left;
+  }
+
+  .es-field.es-field__type.es-field--multiple-checks {
+    display: inline-block;
+    padding-bottom: 0;
+    margin-top: 2.4em;
+
+    .es-field--radio-item-bordered {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.es-listings-total {
+  display: flex;
+  font-size: 1.2em;
+  align-items: center;
+  justify-content: space-between;
+  color: #263238;
+  line-height: 1.67em;
+  margin-bottom: 8px;
+}
+
+// Plans table responsive.
+.es-plans-container {
+
+  &--md-lg {
+    .es-plans-list {
+      .es-plan {
+        h3.es-plan__title, h3.es-plan__title:first-child {
+          font-size: 1.8em;
+          line-height: 1.67em;
+        }
+      }
+    }
+  }
+
+  &--sm, &--xs {
+    .es-pricing .es-row-names {
+      display: none;
+    }
+
+    .es-field.es-field__period {
+      margin-top: 2.4em;
+      margin-bottom: 2.4em;
+      padding-bottom: 0;
+    }
+
+    .es-pricing {
+      display: block;
+    }
+
+    .es-plans-list {
+      display: block;
+      margin: 0;
+
+      .es-plan {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 0 24px;
+
+        & > * {
+          flex: 1;
+        }
+
+        .es-plan__listings-count-inner {
+          display: none;
+        }
+
+        .es-plan__listings-count-inner--mobile {
+          display: block;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        h3.es-plan__title, h3.es-plan__title:first-child {
+          font-size: 1.6em;
+          line-height: 1.62em;
+        }
+
+        .es-plan__head {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &--sm {
+    .es-plans-list {
+      .es-plan {
+        padding: 2.4em;
+
+        .es-plan__footer {
+          align-self: center;
+          align-items: center;
+          display: flex;
+
+          & > * {
+            &:not(.es-btn) {
+              width: 70%;
+            }
+
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  &--xs {
+    .es-plans-list {
+      .es-plan {
+        padding: 2.4em 3.2em;
+        flex-wrap: wrap;
+
+        .es-plan__caption {
+          margin: 0.65rem 0 0;
+        }
+
+        .es-plan__head, .es-plan__content, .es-plan__footer {
+          text-align: left;
+        }
+
+        .es-btn--buy {
+          width: auto;
+        }
+
+        & > * {
+          flex: 1 0 100%;
+        }
+      }
+    }
+  }
+}
+
+.es-otp-container, .es-plans-container {
+  margin: 0 auto;
+
+  .es-field__period {
+    display: block;
+    text-align: center;
+    margin: 5.2em 0;
+
+    & > label {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .es-field__label, .es-field__description {
+      margin: 0 16px;
+    }
+  }
+}
+
+.es-otp-container {
+  max-width: 360px;
+  width: 100%;
+  margin-top: 4.8em;
+
+  .es-btn--buy {
+    margin-top: 24px;
+  }
+
+  .es-total-container {
+    margin-top: 16px;
+  }
+
+  .es-field.es-field--incrementer {
+    padding-bottom: 32px;
+
+    .es-field__label-caption {
+      flex: 1 0 50%;
+      padding-right: 15px;
+
+      p, .es-field__label {
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 4px;
+        max-width: 160px;
+      }
+    }
+
+    .es-field__incrementer-wrap {
+      width: 100%;
+      text-align: right;
+    }
+
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      input {
+        min-width: 56px;
+      }
+    }
+  }
+}
+
+.es-plan {
+  font-size: 10px;
+  font-weight: normal;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px rgba(38, 50, 56, 0.2);
+  border-radius: 6px;
+  padding: 0.8em 2.4em 1.6em;
+  color: #263238;
+  display: inline-block;
+
+  .es-plan__listings-count-inner--mobile {
+    display: none;
+  }
+
+  h3.es-plan__title, h3.es-plan__title:first-child {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 34px;
+    margin-top: 0.72em;
+    margin-bottom: 0.18em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .es-plan__price {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.67em;
+    padding-bottom:  0.83em;
+  }
+
+  &:not(.es-plan--annual-active), .es-plan--monthly-active {
+    .es-plan__price--annual, .es-plan__buy--annual {
+      display: none;
+    }
+
+    .es-plan__price--monthly, .es-plan__buy--monthly {
+      display: inline-flex;
+    }
+  }
+
+  &.es-plan--annual-active {
+    .es-plan__price--annual, .es-plan__buy--annual {
+      display: inline-flex;
+    }
+
+    .es-plan__price--monthly, .es-plan__buy--monthly {
+      display: none;
+    }
+  }
+
+  .es-badge + h3.es-plan__title {
+    margin-top: 0.36em;
+  }
+
+  .es-plan__content {
+    font-size: 1.4em;
+    line-height: 1.71em;
+  }
+
+  .es-plan__listings-count {
+    margin: 18px 0;
+  }
+
+  .es-plan__caption {
+    color: #78909C;
+    line-height: 1.67em;
+    font-size: 1.2em;
+    max-width: 160px;
+    margin: 0 auto 1.5em;
+  }
+
+  .es-btn--buy {
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    line-height: 1;
+    white-space: unset;
+    height: unset;
+    min-height: 40px;
+    word-break: break-all;
+    display: inline-flex;
+    align-items: center;
+  }
+}

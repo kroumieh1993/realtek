@@ -1,0 +1,366 @@
+.es-empty-container {
+  text-align: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 2.75rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+
+    &:before, &:after {
+      content: unset;
+    }
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .es-btn {
+    margin-top: 2rem;
+  }
+}
+
+.es-compare {
+  h2 {
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+
+    &:before, &:after {
+      content: unset;
+    }
+  }
+
+  a {
+    text-decoration: none !important;
+    outline: none;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -2.75rem;
+
+    h2 {
+      flex: 1;
+    }
+
+    .es-fields-switcher-wrap {
+      flex: 1 0 100%;
+      order: 5;
+
+      button, a {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  .js-es-compare__listings-values-slider, .js-es-compare__listings-slider {
+    min-width: 0;
+    min-height: 0;
+  }
+
+  div {
+    box-sizing: border-box;
+  }
+
+  .es-compare__mobile-label {
+    display: none;
+  }
+
+  .es-compare-del-entity {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+
+    * {
+      vertical-align: middle;
+    }
+
+    .es-icon {
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .es-listing {
+    max-width: 27rem;
+  }
+
+  &__listings-wrap, &__fields-wrap {
+    display: flex;
+  }
+
+  &__listings {
+    position: relative;
+
+    .es-listings {
+      padding: 0 1rem;
+    }
+
+    & > .slick-arrow {
+      background: none;
+      font-size: 1.1rem;
+      border: 0;
+      color: #B0BEC5;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      z-index: 1;
+      outline: none;
+      box-shadow: none;
+      padding: 0;
+      text-decoration: none;
+
+      &.slick-prev {
+        left: -4rem;
+      }
+
+      &.slick-next {
+        left: -2rem;
+      }
+    }
+  }
+
+  &__values, &__listings {
+    flex: 4;
+  }
+
+  &__fields, &__control-wrap {
+    flex: 1;
+  }
+
+  &__fields {
+    .es-compare__field {
+      min-height: 2rem;
+      padding: 0.25rem 1rem;
+    }
+
+    .es-compare__field:nth-child(odd) {
+      background-color: #EFF3F5;
+    }
+
+    .es-compare__field:nth-child(even) {
+      background-color: #FFFFFF;
+    }
+  }
+
+  &__listing-values {
+    .es-compare__listing-value {
+      min-height: 2rem;
+      padding: 0.25rem 1rem;
+    }
+
+    .es-compare__listing-value:nth-child(odd) {
+      background-color: #EFF3F5;
+    }
+
+    .es-compare__listing-value:nth-child(even) {
+      background-color: #FFFFFF;
+    }
+  }
+
+  &__fields, &__values {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+
+    .es-icon_minus {
+      position: relative;
+      top: 6px;
+    }
+  }
+
+  .es-listing {
+    box-shadow: none;
+    background: transparent;
+
+    .es-listing__content {
+      padding: 1rem 0 !important;
+    }
+
+    .es-listing__meta, .es-listing__footer {
+      display: none;
+    }
+
+    .es-listing__content {
+      padding: 0;
+    }
+  }
+
+  &--lg, &--xl {
+    .es-compare__heading .es-fields-switcher-wrap a {
+      display: block;
+      max-width: 11rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &--lg {
+    .es-compare__values, .es-compare__listings {
+      flex: 3;
+    }
+
+    .es-compare__heading {
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 1.375rem;
+        line-height: 2.25rem;
+      }
+    }
+  }
+
+  &--md {
+    h2 {
+      font-size: 1.375rem;
+      line-height: 2.25rem;
+    }
+
+    .es-compare__listings .es-listings {
+      padding: 0 0.5rem;
+    }
+
+    .es-compare__listings, .es-compare__values .slick-list {
+      padding: 0 2rem;
+    }
+
+    .es-compare__listing-value {
+      padding: 0.5rem 0.5rem 1rem;
+    }
+  }
+
+  &--md, &--sm {
+    .es-compare__heading {
+      margin-bottom: 1.625rem;
+
+      h2 {
+        margin-bottom: 0;
+        margin-right: 1rem;
+      }
+
+      .es-compare-del-entity {
+        margin-left: auto;
+      }
+
+      * {
+        flex: 0;
+        white-space: nowrap;
+      }
+
+      .es-fields-switcher-wrap {
+        order: unset;
+      }
+    }
+  }
+
+  &--sm {
+    h2 {
+      font-size: 1.125rem;
+      line-height: 2.25rem;
+    }
+
+    .es-compare__listings, .es-compare__values .slick-list {
+      padding: 0 2.125rem;
+    }
+
+    .es-compare__listings .es-listings {
+      padding: 0 1rem;
+    }
+
+    .es-compare__listing-value {
+      padding: 0.5rem 1rem 1rem;
+    }
+  }
+
+  &--xs {
+    h2 {
+      font-size: 1.125rem;
+      line-height: 2.25rem;
+    }
+
+    .es-compare__listing-value {
+      padding: 0.5rem 2.125rem 1rem;
+    }
+
+    .es-compare__listings {
+      padding: 0 2.125rem;
+
+      .es-listings {
+        padding: 0;
+      }
+    }
+
+    .es-compare__heading {
+      margin-bottom: 1.5rem;
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      .es-compare-del-entity {
+        margin-left: auto;
+      }
+
+      .es-fields-switcher-wrap {
+        order: 5;
+        flex: 1 0 100%;
+      }
+    }
+  }
+
+  &--md, &--sm, &--xs {
+    .es-compare__fields, .es-compare__control-wrap {
+      display: none;
+    }
+
+    .es-compare__values {
+      .slick-slide:not(.slick-active) .es-compare__listing-value * {
+        visibility: hidden;
+      }
+    }
+
+    .es-compare__mobile-label {
+      display: block;
+      visibility: hidden;
+    }
+
+    .slick-current {
+      .es-compare__mobile-label {
+        visibility: visible;
+      }
+    }
+
+    .es-compare__values, .es-compare__listings {
+      flex: 1;
+    }
+
+    .es-compare__listings {
+      position: relative;
+
+      .es-listings {
+        padding: 0 1rem;
+      }
+
+      & > .slick-arrow {
+        background: none;
+        color: #B0BEC5;
+
+        &.slick-prev {
+          left: 0;
+        }
+
+        &.slick-next {
+          right: 0;
+          left: unset;
+        }
+      }
+    }
+  }
+}

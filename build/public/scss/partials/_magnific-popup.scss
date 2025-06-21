@@ -1,0 +1,124 @@
+.mfp-bg.es-magnific {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.es-mfg-close-ico {
+    font-size: 1em;
+    color: #B0BEC5;
+    margin-right: 5px;
+}
+
+.es-magnific-popup {
+    max-width: 555px;
+    font-size: 10px;
+    position: relative;
+    width: auto;
+    margin: 20px auto;
+    padding: 37px 20px 45px;
+
+    .es-magnific-listing {
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto;
+        margin-top: 2.4em;
+    }
+
+    .es-magnific-buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 3.2em;
+    }
+
+    &.es-magnific-popup--delete-homes, &.es-magnific-popup--confirm {
+        text-align: center;
+
+        .es-magnific-buttons {
+            display: inline-flex;
+            margin:3.2em -1.6em 0;
+
+            .es-btn {
+                 margin: 0 1.6em;
+            }
+        }
+    }
+
+    /* Surfaces/Primary/Default */
+
+    background: #FFFFFF;
+    /* Shadows/Primary/Active */
+
+    box-shadow: 0 4px 8px rgba(38, 50, 56, 0.15);
+    border-radius: 6px;
+
+    .es-icon.mfp-close {
+        background: transparent !important;
+        font-size: 3em;
+        color: #B0BEC5;
+        cursor: pointer;
+        top: 5px;
+        right: 2px;
+    }
+
+    h4 {
+        text-align: center;
+        color: #263238;
+        font-weight: bold;
+        font-size: 2.2em;
+        line-height: 1.54em;
+    }
+
+    p {
+        font-size: 1.4em;
+        line-height: 1.71em;
+        color: #263238;
+        margin-top: 8px;
+    }
+
+    &.es-magnific-popup--agent_post {
+        h3 {
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &.es-magnific-popup--agency {
+        h3 {
+            img {
+                max-width: 240px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &.es-magnific-popup--contact {
+         padding: 37px 20px 45px;
+
+         .es-request-form .es-component {
+            max-width: 360px;
+            width: 90%;
+            margin: 0 auto;
+         }
+
+         .es-widget__title {
+             margin-bottom: 24px;
+             font-size: 2.2em;
+             line-height: 1.55em;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+
+             img {
+                 width: 64px;
+                 height: 64px;
+                 margin-right: 24px;
+                 border-radius: 50%;
+                 object-fit: cover;
+             }
+         }
+     }
+}

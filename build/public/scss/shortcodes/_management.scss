@@ -1,0 +1,342 @@
+.es-field-break {
+  width: 0;
+  flex-basis: 100%;
+}
+
+.es-table--property {
+  .es-column--post_title, .es-column--address, .es-column--price, .es-column--es_category, .es-column--es_status, .es-column--es_type {
+    word-break: break-all;
+  }
+}
+
+body .es-field.es-field--repeater.es-field__rooms {
+  .es-repeater-item {
+    .es-btn--delete {
+      position: static;
+      margin: 15px 0;
+    }
+
+    .es-field {
+      min-width: 85px;
+    }
+  }
+}
+
+.es-manual-address {
+  font-size: 1.4em;
+  line-height: 1.71em;
+  text-decoration-line: underline !important;
+}
+
+.es-manual-address-wrap {
+  margin-bottom: 32px;
+}
+
+.es-form-map-wrap {
+  flex: 1 0 100%;
+
+  .es-form-map:not(:empty) {
+    min-height: 340px;
+  }
+}
+
+.es-sort-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -15px;
+
+  .es-btn {
+    margin: 0 15px 16px;
+  }
+}
+
+body .es-property-management--form .es-field {
+  padding-bottom: 3px;
+}
+
+.es-property-management--form {
+  .es-entities-list {
+    margin-bottom: 16px;
+  }
+
+  .es-manage-buttons {
+    margin: 20px -10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a, button {
+      margin: 10px 10px 0;
+    }
+
+    a {
+      font-size: 1.2em;
+    }
+
+    a {
+      min-width: 3rem;
+    }
+  }
+
+  .es-field--incrementer {
+    min-width: 190px;
+  }
+
+  .es-field--checkboxes:not(.es-field__es_label) {
+    .es-field--checkbox {
+      width: 50%;
+      display: inline-block;
+    }
+  }
+
+  .es-field__video-file {
+    .es-files-list {
+      margin-top: 20px;
+    }
+  }
+
+  .es-field__caption {
+    margin-bottom: 1.2em;
+  }
+
+  .es-field__appointments {
+    .es-field-row {
+      .es-field {
+        padding-bottom: 0;
+      }
+
+      .es-repeater__delete-item {
+        position: relative;
+        bottom: 25px;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .es-field--number {
+    min-width: 150px;
+  }
+
+  .es-field__area, .es-field__lot_size {
+    .es-unit {
+      font-size: 1.4em;
+      color: #263238;
+      margin-left: 1.6em;
+    }
+
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .es-field__label {
+        flex: 1 0 100%;
+      }
+
+      .es-field__input {
+        flex: 1;
+      }
+    }
+  }
+
+  .es-tabs__content-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -2em;
+
+    & > .es-field.es-field__call_for_price {
+      padding-top: 35px;
+    }
+
+    & > .es-field.es-field__is_address_disabled {
+      padding-bottom: 30px;
+    }
+
+    & > .es-field__es_label, & > .es-field:not(.es-field--incrementer):not(.es-field--number):not(.es-field--radio-item-bordered):not(.es-field__price_note):not(.es-field__call_for_price), .es-assign--agency-list, .es-assign--agent-list {
+      flex: 1 0 100%;
+    }
+
+    & > .es-field__price, & > .es-field__price_note, & > .es-field__call_for_price, & > .es-field__price_per_sqft {
+      flex: 1 0 33.3%;
+    }
+
+    & > * {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+
+    & > .es-field, .es-assign--agency-list, .es-assign--agent-list {
+      box-sizing: border-box;
+      padding: 0 2em 3.2em;
+    }
+
+    .es-field--incrementer {
+      flex: 0 0 33.3%;
+    }
+
+    .es-field.es-field--incrementer label .es-incrementer-field input[type=number].es-field__input {
+      max-width: unset;
+    }
+  }
+
+  #basic-facts {
+    .es-field--number {
+      flex: 0 0 33.3%;
+    }
+
+    .es-field__lot_size {
+      &:after {
+        content: '';
+      }
+    }
+  }
+
+  .es-field {
+    &:not(.es-field--incrementer):not(.es-field--multiple-checks):not(.es-field--checkbox) .es-field__label {
+      margin-bottom: 0.5em;
+    }
+
+    &.es-field--incrementer, &.es-field--multiple-checks {
+      & > .es-field__label {
+        margin-bottom: 1.6em;
+      }
+    }
+  }
+
+  .es-field--checkboxes-bordered .es-field-row, .es-field--radio-bordered .es-field-row {
+    margin: 0 -0.8em -0.8em;
+  }
+
+  .es-field-row .es-field.es-field--checkbox-item-bordered,
+  .es-field-row .es-field.es-field--radio-item-bordered {
+    margin: 0 0.8em 0.8em;
+  }
+}
+
+.es-property-management {
+  font-size: 10px;
+
+  .es-notify {
+    margin-bottom: 10px !important;
+  }
+
+  .es-search {
+    margin-bottom: 2.4em;
+  }
+
+  .es-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+    .es-tabs__nav-link {
+      &, &:focus {
+        background: transparent !important;
+      }
+    }
+
+    .es-tabs__title {
+      font-size: 2.6em;
+      margin-bottom: 30px;
+    }
+
+    .es-tabs__wrapper {
+      flex: 1;
+    }
+
+    &.es-tabs--vertical > .es-tabs__nav {
+      width: 100%;
+      max-width: 288px;
+      flex: 1 0 288px;
+      //padding: 40px 50px 50px;
+      box-sizing: border-box;
+    }
+
+    .es-tabs__numeric {
+      width: 2.285em;
+      height: 2.285em;
+      border-radius: 50%;
+      color: #B0BEC5;
+      background: #EFF3F5;
+      display: inline-block;
+      font-weight: bold;
+      line-height: 2.285em;
+      text-align: center;
+      margin-right: 1.142em;
+    }
+
+    .es-tabs__nav {
+      font-size: 1.4em;
+      line-height: 1.71;
+      margin-bottom: 50px;
+
+      ul, li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        a {
+          color: #B0BEC5;
+          font-weight: bold;
+        }
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 1.142em;
+      }
+
+      li:hover:not(.active) {
+        opacity: 0.6;
+      }
+
+
+      li.active, li:hover {
+        a {
+          color: #263238;
+        }
+
+        .es-tabs__numeric {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.es-property-sort-form {
+  text-align: right;
+  margin: 0 15px 16px !important;
+
+  .es-field {
+    display: inline-block;
+
+    .es-field__label {
+      white-space: nowrap;
+      margin-bottom: 0;
+      margin-right: 1.6em;
+      color: #B0BEC5;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.es-hit-limit {
+  text-align: center;
+
+  .es-icon.es-icon_info {
+    color: #FFB300;
+    font-size: 2.2em;
+    margin-bottom: 16px;
+  }
+}
+
+.es-field--checkboxes-bordered.es-field__assign_entity_type, .es-assign--agency-list, .es-assign--agent-list {
+  width: 100%;
+  max-width: 360px;
+}
