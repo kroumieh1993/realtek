@@ -1,7 +1,7 @@
 <div class="es-wrap es-dashboard">
     <div class="wrap">
         <div class="es-head">
-            <h1><?php _e( 'Migration from Estatik 3', 'es' ); ?></h1>
+            <h1><?php _e( 'Migration from Realtek 3', 'es' ); ?></h1>
             <div class="es-head__logo">
 				<?php do_action( 'es_logo' ); ?>
             </div>

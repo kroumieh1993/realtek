@@ -48,7 +48,7 @@ class Es_Shortcodes_List {
             'Es_Property_Management_Shortcode' => $path . 'class-property-management-shortcode.php',
             'Es_Subscriptions_Shortcode' => $path . 'class-subscriptions-shortcode.php',
 
-            // Backward compatibility for Estatik 3 shortcodes.
+            // Backward compatibility for Realtek 3 shortcodes.
             'Es_Login_Shortcode' => 'class-login-shortcode.php', // [es_login]
             'Es_Restore_Password_Shortcode' => 'class-reset-password-shortcode.php', //[es_register]
             'Es_Register_Shortcode' => 'class-register-shortcode.php', // [es_reset_pwd]

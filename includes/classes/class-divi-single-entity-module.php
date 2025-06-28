@@ -11,8 +11,8 @@ class Es_Divi_Single_Entity_Builder_Module extends ET_Builder_Module_Type_PostCo
 	 * @return void
 	 */
 	public function init() {
-		$this->name = esc_html__( 'Estatik Single Page', 'es' );
-		$this->plural = esc_html__( 'Estatik Single Page', 'es' );
+		$this->name = esc_html__( 'Realtek Single Page', 'es' );
+		$this->plural = esc_html__( 'Realtek Single Page', 'es' );
 		$this->slug = 'es_single_entity_page';
 		$this->vb_support = 'on';
 		$this->post_types = array_merge( et_builder_get_builder_post_types(), es_builders_supported_post_types() );

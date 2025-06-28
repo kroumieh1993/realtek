@@ -1,7 +1,7 @@
 ( function( $ ) {
     'use strict';
 
-    jQuery.fn.estatikProgress = function(options) {
+    jQuery.fn.realtekProgress = function(options) {
         var $el = $( this );
         options = options || {};
 

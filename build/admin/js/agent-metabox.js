@@ -16,7 +16,7 @@
                 if ( $pwd_wrap.find( '.es-validate-item' ).length === $pwd_wrap.find( '.es-validate-item--active' ).length ) {
                     return true;
                 } else {
-                    $pwd_field[0].setCustomValidity( EstatikAgentMetabox.tr.invalid_password_format );
+                    $pwd_field[0].setCustomValidity( RealtekAgentMetabox.tr.invalid_password_format );
                     $pwd_field[0].reportValidity();
                     e.preventDefault();
                     return false;

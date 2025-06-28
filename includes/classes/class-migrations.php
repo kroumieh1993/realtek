@@ -39,7 +39,7 @@ class Es_Migrations {
 
 			$visible_for = serialize( array( 'all_users' ) );
 
-			$sql = "CREATE TABLE IF NOT EXISTS {$wpdb->prefix}estatik_fb_sections (
+			$sql = "CREATE TABLE IF NOT EXISTS {$wpdb->prefix}realtek_fb_sections (
 					  id mediumint(9) NOT NULL AUTO_INCREMENT,
 					  `label` VARCHAR(255) NOT NULL,
 					  `options` TEXT,
@@ -51,7 +51,7 @@ class Es_Migrations {
 					  PRIMARY KEY (id)
 					) $charset_collate;";
 
-			$sql2 = "CREATE TABLE IF NOT EXISTS {$wpdb->prefix}estatik_fb_fields (
+			$sql2 = "CREATE TABLE IF NOT EXISTS {$wpdb->prefix}realtek_fb_fields (
 					  id mediumint(9) NOT NULL AUTO_INCREMENT,
 					  `label` VARCHAR(255) NOT NULL,
 					  frontend_form_name VARCHAR(255),
@@ -265,7 +265,7 @@ class Es_Migrations {
 		}
 
 		if ( ! static::is_executed( 'fb_compare_support' ) ) {
-			$queried = $wpdb->query( "ALTER TABLE {$wpdb->prefix}estatik_fb_fields ADD compare_support INT(1)" );
+			$queried = $wpdb->query( "ALTER TABLE {$wpdb->prefix}realtek_fb_fields ADD compare_support INT(1)" );
 
 			if ( $queried ) {
 				static::set_executed( 'fb_compare_support' );
@@ -273,7 +273,7 @@ class Es_Migrations {
 		}
 
 		if ( ! static::is_executed( 'fb_full_width_column' ) ) {
-			$queried = $wpdb->query( "ALTER TABLE {$wpdb->prefix}estatik_fb_fields ADD is_full_width INT(1)" );
+			$queried = $wpdb->query( "ALTER TABLE {$wpdb->prefix}realtek_fb_fields ADD is_full_width INT(1)" );
 
 			if ( $queried ) {
 				static::set_executed( 'fb_full_width_column' );
@@ -383,8 +383,8 @@ class Es_Migrations {
 		}
 
 		if ( ! static::is_executed( 'fb_pdf_support' ) ) {
-			$queried1 = $wpdb->query( "ALTER TABLE {$wpdb->prefix}estatik_fb_fields ADD is_pdf_visible INT(1) DEFAULT '1'" );
-			$queried2 = $wpdb->query( "ALTER TABLE {$wpdb->prefix}estatik_fb_sections ADD is_pdf_visible INT(1) DEFAULT '1'" );
+			$queried1 = $wpdb->query( "ALTER TABLE {$wpdb->prefix}realtek_fb_fields ADD is_pdf_visible INT(1) DEFAULT '1'" );
+			$queried2 = $wpdb->query( "ALTER TABLE {$wpdb->prefix}realtek_fb_sections ADD is_pdf_visible INT(1) DEFAULT '1'" );
 
 			if ( $queried1 && $queried2 ) {
 				static::set_executed( 'fb_pdf_support' );

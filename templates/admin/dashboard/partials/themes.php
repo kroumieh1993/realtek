@@ -1,5 +1,5 @@
 <div class="es-products-container">
-	<h2><?php _e( 'Estatik themes & freebies', 'es' ); ?></h2>
+	<h2><?php _e( 'Realtek themes & freebies', 'es' ); ?></h2>
 	<div class="es-product-slick-themes js-es-slick " data-slick="<?php echo es_esc_json_attr( array(
 		'infinite' => true,
 		'arrows' => true,

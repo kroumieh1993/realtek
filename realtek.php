@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Plugin Name:       Estatik PRO
- * Plugin URI:        http://estatik.net
- * Description:       A PRO version of Estatik Real Estate plugin for Wordpress.
+ * Plugin Name:       Realtek PRO
+ * Plugin URI:        http://realtek.net
+ * Description:       A PRO version of Realtek Real Estate plugin for Wordpress.
  * Version:           4.1.1
- * Author:            Estatik
- * Author URI:        http://estatik.net
+ * Author:            Realtek
+ * Author URI:        http://realtek.net
  * Text Domain:       es
  * License:           GPL2
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -42,11 +42,11 @@ add_action( 'plugins_loaded', 'es_load_textdomain' );
 require 'plugin-update-checker/plugin-update-checker.php';
 
 $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://estatik.net/wp-update-server/?action=get_metadata&slug=estatik4-pro', //Metadata URL.
+	'https://realtek.net/wp-update-server/?action=get_metadata&slug=realtek4-pro', //Metadata URL.
 	__FILE__,
-	'estatik4-pro'
+	'realtek4-pro'
 );
 
-require_once ES_PLUGIN_CLASSES . 'class-estatik.php';
+require_once ES_PLUGIN_CLASSES . 'class-realtek.php';
 
-Estatik::get_instance();
+Realtek::get_instance();

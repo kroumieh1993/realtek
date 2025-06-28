@@ -206,11 +206,11 @@ abstract class Es_Entities_Archive_Page {
 	 * @return void
 	 */
 	public static function enqueue_assets() {
-		$deps = array( 'es-admin', 'estatik-popup' );
-		wp_enqueue_style( 'es-archive-entities', ES_PLUGIN_URL . 'admin/css/archive-entities.min.css', $deps, Estatik::get_version() );
-		wp_enqueue_script( 'es-archive-entities', ES_PLUGIN_URL . 'admin/js/entities-list.min.js', array( 'estatik-popup', 'jquery', 'es-admin', 'inline-edit-post' ), Estatik::get_version() );
+		$deps = array( 'es-admin', 'realtek-popup' );
+		wp_enqueue_style( 'es-archive-entities', ES_PLUGIN_URL . 'admin/css/archive-entities.min.css', $deps, Realtek::get_version() );
+		wp_enqueue_script( 'es-archive-entities', ES_PLUGIN_URL . 'admin/js/entities-list.min.js', array( 'realtek-popup', 'jquery', 'es-admin', 'inline-edit-post' ), Realtek::get_version() );
 
-		wp_localize_script( 'es-archive-entities', 'EstatikList', array(
+		wp_localize_script( 'es-archive-entities', 'RealtekList', array(
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
 			'nonces' => array(
 				'request_note_popup' => wp_create_nonce( 'es_request_note_popup' )

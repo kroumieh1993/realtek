@@ -1,21 +1,21 @@
 <?php
 
 /**
- * Class Es_Estatik_Logo
+ * Class Es_Realtek_Logo
  */
-class Es_Estatik_Logo {
+class Es_Realtek_Logo {
 
 	/**
 	 * @return void
 	 */
 	public static function init() {
 		if ( ! ests( 'is_white_label_enabled' ) ) {
-			add_action( 'es_logo', arraY( 'Es_Estatik_Logo', 'render' ) );
+			add_action( 'es_logo', arraY( 'Es_Realtek_Logo', 'render' ) );
 		}
 	}
 
 	/**
-	 * Return estatik logo.
+	 * Return realtek logo.
 	 *
 	 * @return void
 	 */
@@ -33,4 +33,4 @@ class Es_Estatik_Logo {
 	}
 }
 
-Es_Estatik_Logo::init();
+Es_Realtek_Logo::init();

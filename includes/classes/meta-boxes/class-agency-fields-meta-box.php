@@ -33,7 +33,7 @@ class Es_Agency_Fields_Meta_Box extends Es_Entity_Fields_Meta_Box {
 
 	public static function enqueue_scripts() {
 		parent::enqueue_scripts();
-		wp_enqueue_script( 'es-agent-metabox', ES_PLUGIN_URL . 'admin/js/agent-metabox.min.js', array( 'jquery', 'es-admin' ), Estatik::get_version() );
+		wp_enqueue_script( 'es-agent-metabox', ES_PLUGIN_URL . 'admin/js/agent-metabox.min.js', array( 'jquery', 'es-admin' ), Realtek::get_version() );
 	}
 }
 

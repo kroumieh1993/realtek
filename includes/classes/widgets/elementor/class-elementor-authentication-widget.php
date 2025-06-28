@@ -30,7 +30,7 @@ class Elementor_Es_Authentication_Widget extends Elementor_Es_Base_Widget {
      * @return string Widget title.
      */
     public function get_title() {
-        return _x( 'Estatik Authentication', 'widget name', 'es' );
+        return _x( 'Realtek Authentication', 'widget name', 'es' );
     }
 
     /**

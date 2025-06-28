@@ -38,7 +38,7 @@
     }
 
     /**
-     * Custom estatik google maps popup for properties.
+     * Custom realtek google maps popup for properties.
      *
      * @param property_config
      * @constructor

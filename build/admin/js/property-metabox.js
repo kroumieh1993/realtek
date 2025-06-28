@@ -68,8 +68,8 @@
         } );
 
         var controlDiv = document.createElement("div");
-        controlDiv.innerHTML = EstatikMetabox.tr.set_pin;
-        controlDiv.setAttribute( 'data-label', EstatikMetabox.tr.save_pin );
+        controlDiv.innerHTML = RealtekMetabox.tr.set_pin;
+        controlDiv.setAttribute( 'data-label', RealtekMetabox.tr.save_pin );
         controlDiv.style.margin = '10px';
         controlDiv.classList.add( 'es-btn', 'es-btn--third', 'es-btn--small', 'es-btn--default' );
         controlDiv.addEventListener( 'click', function() {

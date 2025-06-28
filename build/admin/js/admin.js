@@ -4,7 +4,7 @@
     function loadFieldLocations( $field, $dep_field ) {
         var data = {
             action: 'es_get_locations',
-            nonce: Estatik.nonces.nonce_locations,
+            nonce: Realtek.nonces.nonce_locations,
             types: $field.data( 'address-components' )
         };
 
@@ -39,7 +39,7 @@
         }, 'json' );
     }
 
-    var Estatik_Admin = {
+    var Realtek_Admin = {
         notificationActionsInitialized: false,
         notificationsTimeout: false,
         notificationsTimeoutStarted: false,
@@ -80,7 +80,7 @@
                 taxonomy: taxonomy,
                 type: type,
                 action: 'es_get_terms_creator',
-                nonce: Estatik.nonces.get_terms_creator_nonce
+                nonce: Realtek.nonces.get_terms_creator_nonce
             }, callback );
         },
 
@@ -162,7 +162,7 @@
     }
 
     $( function() {
-        Estatik_Admin.initFields();
+        Realtek_Admin.initFields();
 
         if ( typeof elementor !== 'undefined' ) {
             elementor.hooks.addAction( 'panel/open_editor/widget/es-search-form-widget', initElementorCustomizedSelect2 );
@@ -225,7 +225,7 @@
         // } );
 
         $( document ).ajaxComplete( function() {
-            Estatik_Admin.initFields();
+            Realtek_Admin.initFields();
             $( '.js-es-show-properties-by' ).trigger( 'change' );
         } );
 
@@ -278,7 +278,7 @@
 
             $.post( ajaxurl, {
                 field: $( this ).data( 'save-field' ),
-                save_field_nonce: Estatik.nonces.save_field_nonce,
+                save_field_nonce: Realtek.nonces.save_field_nonce,
                 container: $( this ).data( 'save-container' ),
                 value: value,
                 action: 'es_save_field'
@@ -293,10 +293,10 @@
 
             $.post( ajaxurl, $( this ).serialize(), function( response ) {
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 }
             }, 'json' ).fail( function() {
-                Estatik_Admin.renderNotification( "<div class='es-notification es-notification--error'>Saving error. Please, contact estatik support.</div>" );
+                Realtek_Admin.renderNotification( "<div class='es-notification es-notification--error'>Saving error. Please, contact realtek support.</div>" );
             } ).always( function() {
                 $submit_btn.removeProp( 'disabled' ).removeAttr( 'disabled' ).removeClass( 'es-preload' );
                 $( 'html,body' ).animate( { scrollTop: 0 }, 'slow' );
@@ -366,11 +366,11 @@
         $( document ).on( 'click', '.notice[data-notice] .notice-dismiss', function() {
             var notice = $( this ).closest( '.notice' ).data( 'notice' );
 
-            $.post( ajaxurl, { _ajax_nonce: Estatik.nonces.dismiss_notice_nonce,
+            $.post( ajaxurl, { _ajax_nonce: Realtek.nonces.dismiss_notice_nonce,
                 notice: notice, action: 'es_dismiss_notices' } );
         } );
     } );
 
-    window.Estatik_Admin = Estatik_Admin;
+    window.Realtek_Admin = Realtek_Admin;
     window.esLoadFieldLocations = loadFieldLocations;
 } )( jQuery );

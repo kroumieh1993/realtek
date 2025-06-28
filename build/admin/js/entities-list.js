@@ -31,13 +31,13 @@
 
     $( function() {
         $( '.js-es-add-note-popup' ).on( 'click', function( e ) {
-            $.get( EstatikList.ajaxurl, {
-                nonce: EstatikList.nonces.request_note_popup,
+            $.get( RealtekList.ajaxurl, {
+                nonce: RealtekList.nonces.request_note_popup,
                 post_id: $( this ).data( 'id' ),
                 action: 'es_request_note_popup',
                 redirect_url: document.URL,
             }, function( response ) {
-                $.estatikPopup( { inline_html: response } ).open();
+                $.realtekPopup( { inline_html: response } ).open();
             } );
 
             e.preventDefault();
@@ -112,12 +112,12 @@
             var data = {
                 action: 'es_property_quick_edit_form',
                 post_id: post_id,
-                nonce: Estatik.nonces.quick_edit_nonce
+                nonce: Realtek.nonces.quick_edit_nonce
             };
 
             $.get( ajaxurl, data, function( response ) {
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 } else {
                     $tr.find( '.colspanchange' ).append( response );
                 }
@@ -155,7 +155,7 @@
 
             var data = {
                 action: 'es_property_quick_edit_bulk_form',
-                nonce: Estatik.nonces.quick_edit_bulk_nonce
+                nonce: Realtek.nonces.quick_edit_bulk_nonce
             };
 
             $( 'body' ).find( '.es-overlay' ).remove();
@@ -163,7 +163,7 @@
 
             $.get( ajaxurl, data, function( response ) {
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 } else {
                     $tr.find( '.es-property-quick-edit' ).remove();
                     var $checkboxes = $( '.es-entities-archive .wp-list-table tbody .check-column input[type=checkbox]:checked' );

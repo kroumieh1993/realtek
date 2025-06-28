@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Base class for Estatik plugin entities Es_Entity.
+ * Base class for Realtek plugin entities Es_Entity.
  */
 abstract class Es_Entity {
 

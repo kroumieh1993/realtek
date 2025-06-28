@@ -371,24 +371,24 @@ ul.es-listing__meta {
     }
 }
 
-@-webkit-keyframes estatik-pulse {
+@-webkit-keyframes realtek-pulse {
     0% {opacity: 1; }
     50% {opacity: 0.5; }
     100% {opacity: 1; }
 }
 
-@keyframes estatik-pulse {
+@keyframes realtek-pulse {
     0% {opacity: 1; }
     50% {opacity: 0.5; }
     100% {opacity: 1; }
 }
 
 .es-entities--loading, .es-lisings--loading {
-    -webkit-animation: estatik-pulse 2s infinite ease-in-out;
-    -o-animation: estatik-pulse 2s infinite ease-in-out;
-    -ms-animation: estatik-pulse 2s infinite ease-in-out;
-    -moz-animation: estatik-pulse 2s infinite ease-in-out;
-    animation: estatik-pulse 2s infinite ease-in-out;
+    -webkit-animation: realtek-pulse 2s infinite ease-in-out;
+    -o-animation: realtek-pulse 2s infinite ease-in-out;
+    -ms-animation: realtek-pulse 2s infinite ease-in-out;
+    -moz-animation: realtek-pulse 2s infinite ease-in-out;
+    animation: realtek-pulse 2s infinite ease-in-out;
 }
 
 .es-listings {

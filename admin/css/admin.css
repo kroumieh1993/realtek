@@ -2444,7 +2444,7 @@ select.es-form-control-lg:not([size]):not([multiple]) {
 }
 
 .listings_page_es_settings .notice:not(.es-notice), .listings_page_es_fields_builder .notice:not(.es-notice), .listings_page_es_data_manager .notice:not(.es-notice),
-.estatik_page_es_settings .notice:not(.es-notice), .estatik_page_es_fields_builder .notice:not(.es-notice), .estatik_page_es_data_manager .notice:not(.es-notice), .toplevel_page_es_dashboard .notice:not(.es-notice), .es-head .notice:not(.es-notice) {
+.realtek_page_es_settings .notice:not(.es-notice), .realtek_page_es_fields_builder .notice:not(.es-notice), .realtek_page_es_data_manager .notice:not(.es-notice), .toplevel_page_es_dashboard .notice:not(.es-notice), .es-head .notice:not(.es-notice) {
   display: none;
 }
 

@@ -3,7 +3,7 @@
 
     $( function() {
         var is_empty_main_button, $sortable_plans_xhr;
-        var tr = EstatikSubscription.tr;
+        var tr = RealtekSubscription.tr;
 
         // Save settings form. Uses on data manager and settings page.
         $( document ).on( 'submit', '.js-es-plan-form', function() {
@@ -13,7 +13,7 @@
 
             $.post( ajaxurl, $( this ).serialize(), function( response ) {
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 }
 
                 if ( response.id ) {
@@ -23,7 +23,7 @@
                     $form.find( '.js-es-plan-id' ).val( response.id );
                 }
             }, 'json' ).fail( function() {
-                Estatik_Admin.renderNotification( "<div class='es-notification es-notification--error'>Saving error. Please, contact estatik support.</div>" );
+                Realtek_Admin.renderNotification( "<div class='es-notification es-notification--error'>Saving error. Please, contact realtek support.</div>" );
             } ).always( function() {
                 $submit_btn.removeProp( 'disabled' ).removeAttr( 'disabled' ).removeClass( 'es-preload' );
                 $( 'html,body' ).animate( { scrollTop: 0 }, 'slow' );
@@ -67,7 +67,7 @@
                 var data = {
                     action: 'es_save_plans_order',
                     ordered_ids: [],
-                    _wpnonce: EstatikSubscription.nonces.save_plans_order
+                    _wpnonce: RealtekSubscription.nonces.save_plans_order
                 };
 
                 $el.find( 'tr' ).each( function() {
@@ -80,7 +80,7 @@
                 $sortable_plans_xhr = $.post( ajaxurl, data, function( response ) {
                     response = response || {};
                     if ( response.message ) {
-                        Estatik_Admin.renderNotification( response.message );
+                        Realtek_Admin.renderNotification( response.message );
                     }
                 }, 'json' ).fail( function() {
 
@@ -93,7 +93,7 @@
         $( document ).on( 'click', '.js-es-confirm-delete', function( e ) {
             e.preventDefault();
 
-            $.estatikPopup( {
+            $.realtekPopup( {
                 inline_html: "<p class='es-center es-popup-text'>" + $( this ).data( 'message' ) + "</p>" +
                     "<div class='es-popup__buttons es-center'>" +
                     "<button class='js-es-popup__close es-btn es-btn es-btn--link'>" + tr.cancel + "</button>" +

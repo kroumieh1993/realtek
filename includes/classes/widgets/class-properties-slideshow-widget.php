@@ -9,7 +9,7 @@ class Es_Properties_Slideshow_Widget extends Es_Properties_Filter_Widget {
 	 * Es_Widget_Example constructor.
 	 */
 	public function __construct() {
-		parent::__construct( 'es-properties-slideshow', _x( 'Estatik Properties Slideshow', 'widget name', 'es' ) );
+		parent::__construct( 'es-properties-slideshow', _x( 'Realtek Properties Slideshow', 'widget name', 'es' ) );
 	}
 
 	/**

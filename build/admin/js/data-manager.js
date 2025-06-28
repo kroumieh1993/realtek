@@ -1,8 +1,8 @@
 ( function( $ ) {
     'use strict';
 
-    var tr = Estatik_Data_Manager.tr;
-    var nonce = Estatik_Data_Manager.nonce;
+    var tr = Realtek_Data_Manager.tr;
+    var nonce = Realtek_Data_Manager.nonce;
 
     /**
      * Load list items.
@@ -157,11 +157,11 @@
 
                 if ( response.status === 'error' ) {
                     if ( response.message ) {
-                        Estatik_Admin.renderNotification( response.message );
+                        Realtek_Admin.renderNotification( response.message );
                     }
                 }
             }, 'json' ).fail( function() {
-                Estatik_Admin.renderNotification( "<div class='es-notification es-notification--error'>Saving error. Please, contact estatik support.</div>" );
+                Realtek_Admin.renderNotification( "<div class='es-notification es-notification--error'>Saving error. Please, contact realtek support.</div>" );
             } ).always( function() {
                 $inputs.removeProp( 'disabled' ).removeAttr( 'disabled' ).trigger( 'change' );
             } );
@@ -186,7 +186,7 @@
                 terms_ids.push( $( this ).data( 'term' ) );
             }
 
-            $.estatikPopup( {
+            $.realtekPopup( {
                 inline_html: "<p class='es-center es-popup-text'>" + message + "</p>" +
                 "<div class='es-popup__buttons es-center'>" +
                 "<button class='js-es-popup__close es-btn es-btn es-btn--link'>" + tr.cancel + "</button>" +
@@ -232,7 +232,7 @@
             }, 'json' ).fail( function() {
 
             } ).always( function() {
-                $.estatikPopup().close();
+                $.realtekPopup().close();
             } );
 
             return false;
@@ -283,7 +283,7 @@
                 var $ul = $wrapper.find( '.js-es-terms' );
                 $ul.addClass( 'es-preload' );
 
-                Estatik_Admin.loadTermsCreator( taxonomy, type, function( response ) {
+                Realtek_Admin.loadTermsCreator( taxonomy, type, function( response ) {
                     $wrapper.replaceWith( response );
                 } ).always( function() {
                     $ul.removeClass( 'es-preload' );

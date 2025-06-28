@@ -7,7 +7,7 @@
 
     function esMigrate( data ) {
         $.ajax({
-            url: Estatik_Migration.ajaxurl,
+            url: Realtek_Migration.ajaxurl,
             data: data,
             type: "POST",
             processData: false,  // tell jQuery not to process the data
@@ -22,7 +22,7 @@
                 }
 
                 if ( response.progress ) {
-                    $progressContainer.show().estatikProgress( {progress: response.progress} );
+                    $progressContainer.show().realtekProgress( {progress: response.progress} );
                 }
 
                 if ( response.messages && response.messages ) {
@@ -45,7 +45,7 @@
             },
             dataType: 'json'
         } ).fail( function() {
-            $loggerContainer.append( "<div class='es-notify es-notify--error'>" + Estatik_Migration.tr.internal_error + "</div>" );
+            $loggerContainer.append( "<div class='es-notify es-notify--error'>" + Realtek_Migration.tr.internal_error + "</div>" );
             $form.find('[type=submit]').removeAttr( 'disabled' ).removeClass( 'es-preload' );
         } );
     }
@@ -57,7 +57,7 @@
         var $msg = $('.es-msg-1');
         var $msg2 = $('.es-msg-2');
 
-        $progressContainer.estatikProgress().hide();
+        $progressContainer.realtekProgress().hide();
 
         $form.on( 'submit', function() {
             var form = document.getElementById( this.id );

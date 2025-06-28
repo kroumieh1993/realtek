@@ -4,7 +4,7 @@
         'system' => array(
             'post_title' => 'Luxurious Apartment at Ocean Drive',
             'post_content' => 'Apartment for sale.
-This is a demo single property page of Estatik 4.x plugin built for WordPress websites. You can find all the details about the plugin and its version on our website www.estatik.net.
+This is a demo single property page of Realtek 4.x plugin built for WordPress websites. You can find all the details about the plugin and its version on our website www.realtek.net.
 The best luxurious apartment for buy in Miami Beach and on Ocean Drive! Do not miss this deal. Please call us to get more details and book an appointment with your agent.',
             'post_name' => sanitize_title( 'Luxurious Apartment at Ocean Drive' ),
         ),
@@ -38,14 +38,14 @@ The best luxurious apartment for buy in Miami Beach and on Ocean Drive! Do not m
             'es_roof' => array( 'Slate' ),
             'es_parking' => array( 'Garage attached' ),
             'gallery' => array(
-                'https://estatik.net/wp-content/uploads/2021/01/1.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/2.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/3.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/4.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/1.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/2.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/3.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/4.jpg',
             ),
             'floor_plans' => array(
-                'https://estatik.net/wp-content/uploads/2021/01/7e3a1d849d8dbe2a2de1830e5d55d14c-scaled-e1610547659801.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/template-floor-plan.png'
+                'https://realtek.net/wp-content/uploads/2021/01/7e3a1d849d8dbe2a2de1830e5d55d14c-scaled-e1610547659801.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/template-floor-plan.png'
             ),
             'elementary-school' => 'Coconut Grove Elemntary School, Southside Elementary School',
             'secondary-school' => 'Miami Best Secondary School',
@@ -61,7 +61,7 @@ The best luxurious apartment for buy in Miami Beach and on Ocean Drive! Do not m
             'post_title' => 'Multifamily Residential',
             'post_content' => 'Apartment with amazing ocean view.
 
-This is a demo single property page of Estatik 4.x plugin.
+This is a demo single property page of Realtek 4.x plugin.
 Valet, shops, business center, spa, fitness center, sauna jacuzzi, 3 state of the art swimming pools, walk to restaurants, bank, American airlines arena bayside, pharmacies, Whole Foods market. Close to the airport, Miami Adrienne Arsht Center, Perez art…',
             'post_name' => sanitize_title( 'Multifamily Residential' ),
         ),
@@ -91,13 +91,13 @@ Valet, shops, business center, spa, fitness center, sauna jacuzzi, 3 state of th
             'longitude' => '-80.1291191',
             'address_components' => '[{"long_name":"924","short_name":"924","types":["street_number"]},{"long_name":"Marseille Drive","short_name":"Marseille Dr","types":["route"]},{"long_name":"Normandy Isles","short_name":"Normandy Isles","types":["neighborhood","political"]},{"long_name":"Miami Beach","short_name":"Miami Beach","types":["locality","political"]},{"long_name":"Miami-Dade County","short_name":"Miami-Dade County","types":["administrative_area_level_2","political"]},{"long_name":"Florida","short_name":"FL","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"33141","short_name":"33141","types":["postal_code"]},{"long_name":"2902","short_name":"2902","types":["postal_code_suffix"]}]',
             'gallery' => array(
-                'https://estatik.net/wp-content/uploads/2021/01/1-1.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/2-1.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/3-1.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/4-1.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/5.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/6.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/7.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/1-1.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/2-1.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/3-1.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/4-1.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/5.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/6.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/7.jpg',
             ),
         )
     ),
@@ -106,7 +106,7 @@ Valet, shops, business center, spa, fitness center, sauna jacuzzi, 3 state of th
         'system' => array(
             'post_title' => 'Office in business center',
             'post_content' => 'Office for rent.
-This is a demo single property page of Estatik 4.x plugin built for WordPress websites. You can find all the details about the plugin and its version on our website www.estatik.net.',
+This is a demo single property page of Realtek 4.x plugin built for WordPress websites. You can find all the details about the plugin and its version on our website www.realtek.net.',
             'post_name' => sanitize_title( 'Office in business center' ),
         ),
         'fields' => array(
@@ -134,9 +134,9 @@ This is a demo single property page of Estatik 4.x plugin built for WordPress we
             'postal_code' => '33144',
             'address_components' => 'data-value="[{"long_name":"8230","short_name":"8230","types":["street_number"]},{"long_name":"West Flagler Street","short_name":"W Flagler St","types":["route"]},{"long_name":"Miami","short_name":"Miami","types":["locality","political"]},{"long_name":"Miami-Dade County","short_name":"Miami-Dade County","types":["administrative_area_level_2","political"]},{"long_name":"Florida","short_name":"FL","types":["administrative_area_level_1","political"]},{"long_name":"United States","short_name":"US","types":["country","political"]},{"long_name":"33144","short_name":"33144","types":["postal_code"]},{"long_name":"2069","short_name":"2069","types":["postal_code_suffix"]}]"',
             'gallery' => array(
-                'https://estatik.net/wp-content/uploads/2021/01/1-2.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/2-2.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/3-2.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/1-2.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/2-2.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/3-2.jpg',
             ),
             'es_floor_covering' => array( 'Carpet', 'Slate' ),
             'es_basement' => array( 'Finished' ),
@@ -151,18 +151,18 @@ This is a demo single property page of Estatik 4.x plugin built for WordPress we
         'system' => array(
             'post_title' => 'Spectacular house',
             'post_content' => 'House for sale.
-This is a demo single property page of Estatik 4.x plugin.',
+This is a demo single property page of Realtek 4.x plugin.',
             'post_name' => sanitize_title( 'Spectacular house' ),
         ),
         'fields' => array(
             'gallery' => array(
-                'https://estatik.net/wp-content/uploads/2021/01/1-3.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/2-3.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/3-3.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/4-2.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/5-1.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/6-1.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/7-1.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/1-3.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/2-3.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/3-3.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/4-2.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/5-1.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/6-1.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/7-1.jpg',
             ),
             'price' => '459000',
             'price_note' => 'For sale by owner',
@@ -207,15 +207,15 @@ This is a demo single property page of Estatik 4.x plugin.',
         'system' => array(
             'post_title' => 'The cosy condo next to the airport and center',
             'post_content' => 'Condo for sale.
-This is a demo single property page of Estatik 4.x plugin.
+This is a demo single property page of Realtek 4.x plugin.
 Valet, shops, business center, spa, fitness center, sauna jacuzzi, 3 state of the art swimming pools, walk to restaurants, bank, American airlines arena bayside, pharmacies, Whole Foods market. Close to the airport, Miami Adrienne Arsht Center, Perez art...',
             'post_name' => sanitize_title( 'The cosy condo next to the airport and center' ),
         ),
         'fields' => array(
             'gallery' => array(
-                'https://estatik.net/wp-content/uploads/2021/01/1-4.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/2-4.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/3-4.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/1-4.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/2-4.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/3-4.jpg',
             ),
             'price' => '220000',
             'price_note' => 'hot deal',
@@ -252,16 +252,16 @@ Valet, shops, business center, spa, fitness center, sauna jacuzzi, 3 state of th
             'post_title' => 'Trendy Apartment with Amazing Ocean Views',
             'post_content' => 'Apartment with amazing ocean view
 
-This is a demo single property page of Estatik 4.x plugin.
+This is a demo single property page of Realtek 4.x plugin.
 Valet, shops, business center, spa, fitness center, sauna jacuzzi, 3 state of the art swimming pools, walk to restaurants, bank, American airlines arena bayside, pharmacies, Whole Foods market. Close to the airport, Miami Adrienne Arsht Center, Perez art...',
             'post_name' => sanitize_title( 'Trendy Apartment with Amazing Ocean Views' ),
         ),
         'fields' => array(
             'gallery' => array(
-                'https://estatik.net/wp-content/uploads/2021/01/1-5.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/2-5.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/3-5.jpg',
-                'https://estatik.net/wp-content/uploads/2021/01/4-3.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/1-5.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/2-5.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/3-5.jpg',
+                'https://realtek.net/wp-content/uploads/2021/01/4-3.jpg',
             ),
             'price' => '1500',
             'bathrooms' => '2',

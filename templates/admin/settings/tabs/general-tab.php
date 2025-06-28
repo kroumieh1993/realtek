@@ -49,7 +49,7 @@
     es_settings_field_render( 'is_white_label_enabled', array(
 	    'label' => __( 'Enable white label', 'es' ),
 	    'type' => 'switcher',
-	    'description' => __( "Enable this option if you want to remove Estatik logo and 'Powered by' link on Estatik pages.", 'es' ),
+	    'description' => __( "Enable this option if you want to remove Realtek logo and 'Powered by' link on Realtek pages.", 'es' ),
     ) );
 
     es_settings_field_render( 'is_rest_support_enabled', array(

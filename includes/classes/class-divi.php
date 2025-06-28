@@ -31,7 +31,7 @@ class Es_Divi_Init {
 			return $post_content;
 		}
 
-		return es_et_builder_estatik_get_initial_property_content();
+		return es_et_builder_realtek_get_initial_property_content();
 	}
 
 	/**

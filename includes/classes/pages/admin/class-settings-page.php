@@ -61,10 +61,10 @@ class Es_Settings_Page {
 
 		wp_enqueue_style( 'wp-color-picker' );
 
-		wp_enqueue_style( 'es-admin-settings', plugin_dir_url( ES_FILE ) . 'admin/css/settings.min.css', array( 'es-admin', 'es-select2' ), Estatik::get_version() );
-		wp_enqueue_script( 'es-admin-settings', plugin_dir_url( ES_FILE ) . 'admin/js/settings.min.js', array( 'jquery', 'es-admin' ), Estatik::get_version() );
+		wp_enqueue_style( 'es-admin-settings', plugin_dir_url( ES_FILE ) . 'admin/css/settings.min.css', array( 'es-admin', 'es-select2' ), Realtek::get_version() );
+		wp_enqueue_script( 'es-admin-settings', plugin_dir_url( ES_FILE ) . 'admin/js/settings.min.js', array( 'jquery', 'es-admin' ), Realtek::get_version() );
 
-		wp_localize_script( 'es-admin-settings', 'Estatik_Settings', array(
+		wp_localize_script( 'es-admin-settings', 'Realtek_Settings', array(
 			'save_nonce' => wp_create_nonce( 'es_save_settings' )
 		) );
 

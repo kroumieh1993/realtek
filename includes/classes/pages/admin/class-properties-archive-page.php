@@ -400,7 +400,7 @@ class Es_Properties_Archive_Page extends Es_Entities_Archive_Page {
 	}
 
 	/**
-	 * Add custom columns for estatik properties table.
+	 * Add custom columns for realtek properties table.
 	 *
 	 * @param $columns array
 	 *

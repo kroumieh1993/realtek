@@ -8,7 +8,7 @@
             }
             // Initialize js for properties hfm.
             elementorFrontend.hooks.addAction( 'frontend/element_ready/global', function ( e, $scope ) {
-                EstatikResponsinator.init();
+                RealtekResponsinator.init();
 
                 if ( $scope.find( '.js-es-p-slideshow') ) {
                     initPropertiesSlideshow();
@@ -19,17 +19,17 @@
                 }
 
                 if ( $scope.find( '.js-es-slick' ) ) {
-                    EstatikProperties.initCarousel( e, $scope );
+                    RealtekProperties.initCarousel( e, $scope );
                 }
 
                 if ( $scope.find( '.js-es-properties' ) ) {
                     $( document ).find( '.js-es-properties__map.es-properties__map--visible' ).each( function() {
                         var $properties_wrap = $( this ).closest( '.js-es-properties' );
-                        var map_instance = new EstatikHalfMap( $properties_wrap );
+                        var map_instance = new RealtekHalfMap( $properties_wrap );
                         var $listings_wrapper = $properties_wrap.find( '.js-es-listings' );
-                        var hash = new EstatikEntitiesHash( $listings_wrapper.data( 'hash' ) );
+                        var hash = new RealtekEntitiesHash( $listings_wrapper.data( 'hash' ) );
 
-                        EstatikProperties.halfMapInstances[ hash.getValue( 'loop_uid' ) ] = map_instance;
+                        RealtekProperties.halfMapInstances[ hash.getValue( 'loop_uid' ) ] = map_instance;
 
                         if ( map_instance ) {
                             map_instance.init();

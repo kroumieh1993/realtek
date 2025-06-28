@@ -176,9 +176,9 @@ class Es_Migration_Page {
 	public static function render() {
 		$f = es_framework_instance();
 		$f->load_assets();
-		wp_enqueue_style( 'es-migration', ES_PLUGIN_URL . '/admin/css/migration.min.css', array( 'es-admin', 'estatik-progress' ), Estatik::get_version() );
-		wp_enqueue_script( 'es-migration', ES_PLUGIN_URL . '/admin/js/migration.min.js', array( 'jquery', 'estatik-progress' ), Estatik::get_version() );
-		wp_localize_script( 'es-migration', 'Estatik_Migration', array(
+		wp_enqueue_style( 'es-migration', ES_PLUGIN_URL . '/admin/css/migration.min.css', array( 'es-admin', 'realtek-progress' ), Realtek::get_version() );
+		wp_enqueue_script( 'es-migration', ES_PLUGIN_URL . '/admin/js/migration.min.js', array( 'jquery', 'realtek-progress' ), Realtek::get_version() );
+		wp_localize_script( 'es-migration', 'Realtek_Migration', array(
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
 			'listingsLink' => admin_url( 'edit.php?post_type=properties' ),
 			'tr' => array(

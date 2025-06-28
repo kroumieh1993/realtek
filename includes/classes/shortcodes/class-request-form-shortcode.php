@@ -74,7 +74,7 @@ class Es_Request_Form_Shortcode extends Es_Shortcode {
             'disable_name' => false,
             'custom_email' => false,
             'disable_email' => false,
-            'subject' => __( 'Estatik Request Info from', 'es' ),
+            'subject' => __( 'Realtek Request Info from', 'es' ),
             'button_text' => __( 'Request info', 'es' ),
         ) );
     }

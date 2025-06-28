@@ -99,15 +99,15 @@
 
     <div class="es-upgrade-container">
         <div class="wrap">
-            <h2><?php _e( 'Check out other <br>Estatik Real Estate Web Solutions', 'es' ); ?></h2>
+            <h2><?php _e( 'Check out other <br>Realtek Real Estate Web Solutions', 'es' ); ?></h2>
 
             <div class="es-row" style="justify-content: center;">
                 <div class="es-col-md-4 es-col-sm-6">
                     <div class="es-upgrade-item">
                         <span class="es-icon es-icon_premium es-icon--rounded"></span>
                         <h4><?php _e( 'Premium', 'es' ); ?></h4>
-                        <p><?php printf( __( 'Import listings from your MLS via RETS, Web API or CREA DDF facility. Plugin setup service is included. Sit back and let us handle everything! Click <a href="%s" target="%s">here</a> to read details.', 'es' ), 'https://estatik.net/rets-and-api-listings-import/', '_blank' ); ?></p>
-                        <a href="https://estatik.net/choose-your-version/" target="_blank" class="es-btn es-btn--secondary"><?php _e( 'Upgrade', 'es' ); ?></a>
+                        <p><?php printf( __( 'Import listings from your MLS via RETS, Web API or CREA DDF facility. Plugin setup service is included. Sit back and let us handle everything! Click <a href="%s" target="%s">here</a> to read details.', 'es' ), 'https://realtek.net/rets-and-api-listings-import/', '_blank' ); ?></p>
+                        <a href="https://realtek.net/choose-your-version/" target="_blank" class="es-btn es-btn--secondary"><?php _e( 'Upgrade', 'es' ); ?></a>
                     </div>
                 </div>
             </div>

@@ -30,7 +30,7 @@ class Elementor_Es_Locations_Grid_Widget extends Elementor_Es_Base_Widget {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return _x( 'Estatik Locations', 'widget name', 'es' );
+		return _x( 'Realtek Locations', 'widget name', 'es' );
 	}
 
 	/**

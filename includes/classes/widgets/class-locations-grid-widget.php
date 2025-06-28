@@ -9,7 +9,7 @@ class Es_Locations_Grid_Widget extends Es_Properties_Filter_Widget {
 	 * Es_Widget_Example constructor.
 	 */
 	public function __construct() {
-		parent::__construct( 'es-locations-grid', _x( 'Estatik Locations', 'widget name', 'es' ) );
+		parent::__construct( 'es-locations-grid', _x( 'Realtek Locations', 'widget name', 'es' ) );
 	}
 
 	/**

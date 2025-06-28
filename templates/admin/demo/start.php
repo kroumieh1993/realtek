@@ -7,10 +7,10 @@
 
 ?>
 <div class="es-demo__header">
-    <img class="es-logo" src="<?php echo ES_PLUGIN_URL . 'admin/images/estatik-logo.svg'; ?>" alt="Estatik Logo"/>
+    <img class="es-logo" src="<?php echo ES_PLUGIN_URL . 'admin/images/realtek-logo.svg'; ?>" alt="Realtek Logo"/>
 
-    <h1><?php _e( 'Welcome to Estatik', 'es' ); ?></h1>
-    <p><?php _e( 'Thank you for choosing Estatik. Grab your instant 5% OFF for<br> any Estatik product using coupon code below.', 'es' ); ?></p>
+    <h1><?php _e( 'Welcome to Realtek', 'es' ); ?></h1>
+    <p><?php _e( 'Thank you for choosing Realtek. Grab your instant 5% OFF for<br> any Realtek product using coupon code below.', 'es' ); ?></p>
 
     <div class="es-coupon-wrapper">
         <div class="es-coupon">
@@ -32,7 +32,7 @@
 <div class="es-price-table__wrapper">
     <div class="es-price-table">
         <div class="es-price-table__header">
-            <h2><?php _e( 'Compare and choose <br>your version of Estatik', 'es' ); ?></h2>
+            <h2><?php _e( 'Compare and choose <br>your version of Realtek', 'es' ); ?></h2>
             <?php foreach ( $products as $key => $product ) : ?>
                 <div class="es-product es-product--<?php echo $key; ?>">
                     <?php echo $product['icon']; ?>

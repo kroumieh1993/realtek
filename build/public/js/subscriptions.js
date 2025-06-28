@@ -43,7 +43,7 @@
                 var n = Math.floor( basic_count / per_basic_count );
                 var free_featured_sum = free_featured * n;
 
-                $free_featured_container.html( free_featured_sum + ' x ' + EstatikSubscriptions.tr.free );
+                $free_featured_container.html( free_featured_sum + ' x ' + RealtekSubscriptions.tr.free );
 
             } else {
                 $free_featured_container.html( '' );
@@ -57,7 +57,7 @@
                 sum += featured_total * featured_price;
             }
 
-            sum = EstatikFormatter.price( sum );
+            sum = RealtekFormatter.price( sum );
 
             $( '.js-es-total', $form ).html( sum );
 

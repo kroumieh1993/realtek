@@ -76,7 +76,7 @@
                             var entity_type = $entities.data( 'entity' );
                             var builder = entitiesBuilderFactory( entity_type );
 
-                            xhr = $.post( Estatik.settings.ajaxurl, {action: 'get_' + entity_type, hash: hash.getHash(), reload_map: 1 }, function( response ) {
+                            xhr = $.post( Realtek.settings.ajaxurl, {action: 'get_' + entity_type, hash: hash.getHash(), reload_map: 1 }, function( response ) {
                                 response = response || {};
 
                                 if ( 'success' === response.status ) {
@@ -112,7 +112,7 @@
                 need_scroll = need_scroll === 'undefined' ? true : need_scroll;
 
                 if ( need_scroll && $wrapper.length ) {
-                    var scroll_offset = $wrapper.offset().top - ( +Estatik.settings.listings_offset_corrector );
+                    var scroll_offset = $wrapper.offset().top - ( +Realtek.settings.listings_offset_corrector );
 
                     $( [document.documentElement, document.body] ).animate( {
                         scrollTop: scroll_offset || 0
@@ -218,7 +218,7 @@
         EntitiesHash.prototype.clearQueryArguments = function() {
             var _this = this;
             var temp_hash = this.tempEntitiesHash;
-            var search_fields = Estatik.search.fields;
+            var search_fields = Realtek.search.fields;
 
             this.tempEntitiesHash.getAttributes().forEach( function( value, key ) {
                 if ( ! temp_hash.shortcode_attributes.includes( key ) && ! search_fields.includes( key ) ) {
@@ -321,7 +321,7 @@
         return this;
     };
 
-    window.EstatikEntitiesHash = EntitiesHash;
+    window.RealtekEntitiesHash = EntitiesHash;
 
     /**
      * Agents object with helper func.
@@ -333,7 +333,7 @@
          */
         init: function() {
             // Initialize agents GRID using responsive breakpoints.
-            EstatikResponsinator.init( 'agents' );
+            RealtekResponsinator.init( 'agents' );
         },
 
         /**
@@ -390,7 +390,7 @@
          */
         init: function() {
             // Initialize properties GRID using responsive breakpoints.
-            // EstatikResponsinator.init( 'listings' );
+            // RealtekResponsinator.init( 'listings' );
 
             setTimeout( function() {
                 Properties.initCarousel();
@@ -471,7 +471,7 @@
                     config.infinite = Boolean( config.infinite );
                 }
 
-                config.rtl = Estatik.settings.is_rtl;
+                config.rtl = Realtek.settings.is_rtl;
 
                 if ( is_vertical ) {
                     if ( ! $( this ).hasClass( 'slick-initialized' ) ) {
@@ -506,7 +506,7 @@
         },
     };
 
-    window.EstatikProperties = Properties;
+    window.RealtekProperties = Properties;
 
     /**
      * Half map helper class.
@@ -534,29 +534,29 @@
             this.$map = $( '.js-es-map', _this.$wrapper );
             this.map = _this.$map[0];
 
-            // EstatikResponsinator.init( 'half_map' );
+            // RealtekResponsinator.init( 'half_map' );
 
             var options = {
                 draggable: true,
                 zoom: 16
             };
 
-            if ( Estatik.settings.map_zoom ) {
-                options.zoom = +Estatik.settings.map_zoom;
+            if ( Realtek.settings.map_zoom ) {
+                options.zoom = +Realtek.settings.map_zoom;
             }
 
-            var is_cluster_enabled = +Estatik.settings.is_cluster_enabled;
-            var map_marker_type = Estatik.settings.map_marker_type;
+            var is_cluster_enabled = +Realtek.settings.is_cluster_enabled;
+            var map_marker_type = Realtek.settings.map_marker_type;
 
             var enable_zoom_limit = ! is_cluster_enabled || map_marker_type === 'price';
 
-            if ( ! Estatik.settings.can_zoom && enable_zoom_limit ) {
-                if ( Estatik.settings.map_zoom_min ) {
-                    options.minZoom = +Estatik.settings.map_zoom_min;
+            if ( ! Realtek.settings.can_zoom && enable_zoom_limit ) {
+                if ( Realtek.settings.map_zoom_min ) {
+                    options.minZoom = +Realtek.settings.map_zoom_min;
                 }
 
-                if ( Estatik.settings.map_zoom_max ) {
-                    options.maxZoom = +Estatik.settings.map_zoom_max;
+                if ( Realtek.settings.map_zoom_max ) {
+                    options.maxZoom = +Realtek.settings.map_zoom_max;
                 }
             }
 
@@ -643,7 +643,7 @@
 
                 _this.$wrapper.find( '.js-es-listings' ).addClass( 'es-listings--loading' );
 
-                _this.xhr = $.post( Estatik.settings.ajaxurl, { reload_map: 0, hash: hash.getHash(), action: 'get_listings' }, function( response ) {
+                _this.xhr = $.post( Realtek.settings.ajaxurl, { reload_map: 0, hash: hash.getHash(), action: 'get_listings' }, function( response ) {
                     Properties.append( response, _this.$wrapper.find( '.js-es-entities__wrap_inner' ), false );
                 }, 'json' );
             }
@@ -661,12 +661,12 @@
             if ( typeof _this.markers[ post_id ] !== 'undefined' ) {
                 var marker = _this.markers[ post_id ];
                 var icon = {};
-                if ( Estatik.settings.map_marker_type !== 'price' ) {
+                if ( Realtek.settings.map_marker_type !== 'price' ) {
                     icon = marker.getIcon();
                 }
                 var marker_svg = marker.marker_svg;
                 if ( marker_svg ) {
-                    marker_svg = marker_svg.replaceAll( 'data-color', 'style="fill: ' + Estatik.settings.main_color + '"' );
+                    marker_svg = marker_svg.replaceAll( 'data-color', 'style="fill: ' + Realtek.settings.main_color + '"' );
                     icon.url = 'data:image/svg+xml;charset=UTF-8;base64,' + window.btoa( marker_svg );
                     marker.setIcon( icon );
                 }
@@ -682,7 +682,7 @@
             if ( typeof _this.markers[ post_id ] !== 'undefined' ) {
                 var marker = _this.markers[ post_id ];
                 var icon = {};
-                if ( Estatik.settings.map_marker_type !== 'price' ) {
+                if ( Realtek.settings.map_marker_type !== 'price' ) {
                     icon = marker.getIcon();
                 }
                 var marker_svg = marker.marker_svg;
@@ -755,7 +755,7 @@
 
                     coordinates[j].position = location;
 
-                    if ( Estatik.settings.map_marker_type === 'price' ) {
+                    if ( Realtek.settings.map_marker_type === 'price' ) {
                         if ( coordinates[j].price ) {
                             var price_marker = new EsGoogleMapPriceMarker(coordinates[j], ( _this.propertyPopup )( location, coordinates[j] ) );
                             price_marker.setMap( _this.mapInstance );
@@ -775,11 +775,11 @@
                         var marker_color = null;
 
                         if ( typeof coordinates[j].marker !== 'undefined' ) {
-                            marker_svg = Estatik.settings.map_marker_icons[coordinates[j].marker];
+                            marker_svg = Realtek.settings.map_marker_icons[coordinates[j].marker];
                             marker_color = coordinates[j].marker_color;
                         } else {
-                            marker_svg = Estatik.settings.map_marker_icons[Estatik.settings.map_marker_icon];
-                            marker_color = Estatik.settings.map_marker_color;
+                            marker_svg = Realtek.settings.map_marker_icons[Realtek.settings.map_marker_icon];
+                            marker_color = Realtek.settings.map_marker_color;
                         }
 
                         marker.marker_svg = marker_svg;
@@ -808,19 +808,19 @@
                     }
                 }
 
-                if ( typeof Estatik.settings.default_lat_lng !== 'undefined' ) {
-                    var center = Estatik.settings.default_lat_lng;
+                if ( typeof Realtek.settings.default_lat_lng !== 'undefined' ) {
+                    var center = Realtek.settings.default_lat_lng;
                     _this.mapInstance.setCenter( { lat: +center[0], lng: +center[1] } );
 
-                    if ( Estatik.settings.map_zoom ) {
-                        _this.mapInstance.setZoom( +Estatik.settings.map_zoom );
+                    if ( Realtek.settings.map_zoom ) {
+                        _this.mapInstance.setZoom( +Realtek.settings.map_zoom );
                     }
                 } else {
                     if ( typeof bounds !== 'undefined' ) {
                         if ( Object.keys( coordinates ).length === 1 ) {
                             Object.keys( coordinates ).forEach( function( key ) {
                                 _this.mapInstance.setCenter( { lat: +coordinates[key].lat, lng: +coordinates[key].lng } );
-                                _this.mapInstance.setZoom( +Estatik.settings.map_zoom  );
+                                _this.mapInstance.setZoom( +Realtek.settings.map_zoom  );
                             } );
                         } else {
                             _this.mapInstance.fitBounds( bounds );
@@ -830,7 +830,7 @@
                 }
 
                 if ( _this.markers ) {
-                    if ( Estatik.settings.is_cluster_enabled && Estatik.settings.map_marker_type !== 'price' ) {
+                    if ( Realtek.settings.is_cluster_enabled && Realtek.settings.map_marker_type !== 'price' ) {
                         var cluster_styles = [{
                             width: 44,
                             height: 44,
@@ -841,11 +841,11 @@
                             anchorIcon: [38,22]
                         }];
 
-                        if ( 'cluster3' === Estatik.settings.map_cluster_icon ) {
-                            cluster_styles[0].textColor = Estatik.settings.map_cluster_color;
+                        if ( 'cluster3' === Realtek.settings.map_cluster_icon ) {
+                            cluster_styles[0].textColor = Realtek.settings.map_cluster_color;
                         }
 
-                        if ( +Estatik.settings.is_cluster_enabled && Estatik.settings.map_marker_type !== 'price' ) {
+                        if ( +Realtek.settings.is_cluster_enabled && Realtek.settings.map_marker_type !== 'price' ) {
                             _this.clusters.push( new MarkerClusterer( _this.mapInstance, _this.markers, {
                                 maxZoom: 12,
                                 styles: cluster_styles
@@ -878,7 +878,7 @@
 
                 _this.close_popups();
 
-                _this.xhr = $.post( Estatik.settings.ajaxurl, request_data, function( response ) {
+                _this.xhr = $.post( Realtek.settings.ajaxurl, request_data, function( response ) {
                     response = response || {};
                     property_config.content = response.content;
                     property_config.position = new google.maps.LatLng( property_config.lat , property_config.lng );
@@ -914,8 +914,8 @@
          * @returns {string}
          */
         HalfMap.getClusterIcon = function( color ) {
-            color = color || Estatik.settings.map_cluster_color;
-            var cluster = Estatik.settings.map_cluster_icons[Estatik.settings.map_cluster_icon];
+            color = color || Realtek.settings.map_cluster_color;
+            var cluster = Realtek.settings.map_cluster_icons[Realtek.settings.map_cluster_icon];
             cluster = cluster.replaceAll( 'data-color', 'style="fill:' + color + '"' ).replaceAll('data-hide', 'style="fill:#ffffff"');
             var encoded = window.btoa( cluster );
 
@@ -923,7 +923,7 @@
         };
     };
 
-    window.EstatikHalfMap = HalfMap;
+    window.RealtekHalfMap = HalfMap;
 
     /**
      * Return entity builder class.
@@ -945,7 +945,7 @@
 
     function toggleSidebar(layout, entity_type) {
         if ( entity_type === 'listings' ) {
-            $( Estatik.settings.hfm_toggle_sidebar_selector ).toggleClass( 'es-hidden', layout === 'half_map' );
+            $( Realtek.settings.hfm_toggle_sidebar_selector ).toggleClass( 'es-hidden', layout === 'half_map' );
             $( document ).trigger( 'listings_toggle_sidebar', {
                 layout: layout,
                 entity_type: entity_type
@@ -1002,7 +1002,7 @@
                     reload_map: 1
                 };
 
-                $.post( Estatik.settings.ajaxurl, data, function( response ) {
+                $.post( Realtek.settings.ajaxurl, data, function( response ) {
                     builder.append( response, $wrapper );
                 }, 'json' );
             }
@@ -1047,7 +1047,7 @@
                         map_instance.init();
                     }
 
-                    layout = Estatik.settings.grid_layout;
+                    layout = Realtek.settings.grid_layout;
                 } else {
                     var $map = $entities_wrap.find( '.js-es-properties__map' );
 
@@ -1057,7 +1057,7 @@
                     }
                 }
 
-                if ( Estatik.settings.hfm_toggle_sidebar && Estatik.settings.hfm_toggle_sidebar_selector ) {
+                if ( Realtek.settings.hfm_toggle_sidebar && Realtek.settings.hfm_toggle_sidebar_selector ) {
                     toggleSidebar(temp_layout, entity_type);
                 }
 
@@ -1102,7 +1102,7 @@
                 $( this ).addClass( 'page-numbers--preload' );
                 $pagination_wrapper.addClass( 'es-pagination--disabled' );
 
-                $.post( Estatik.settings.ajaxurl, data, function( response ) {
+                $.post( Realtek.settings.ajaxurl, data, function( response ) {
                     builder.append( response, $wrapper, true );
                 }, 'json' );
             }
@@ -1146,7 +1146,7 @@
                     reload_map: 1
                 };
 
-                $.post( Estatik.settings.ajaxurl, data, function( response ) {
+                $.post( Realtek.settings.ajaxurl, data, function( response ) {
                     builder.append( response, $wrapper );
                 }, 'json' ).always( function() {
                     $el.removeProp( 'disabled' ).removeAttr( 'disabled' );
@@ -1209,7 +1209,7 @@
             hash.setValue( 'paged-' + hash.getValue( 'loop_uid' ), 1 );
             hash.setHistoryQuery();
 
-            $.post( Estatik.settings.ajaxurl, data, function( response ) {
+            $.post( Realtek.settings.ajaxurl, data, function( response ) {
                 builder.append( response, $wrapper );
             }, 'json' ).fail( function() {
                 $el.removeClass( 'es-disable' ).removeClass( 'es-active' );

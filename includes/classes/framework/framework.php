@@ -5,7 +5,7 @@ if ( ! defined( 'DS' ) ) {
 }
 
 require_once 'functions.php';
-require_once 'class-estatik-framework.php';
+require_once 'class-realtek-framework.php';
 require_once 'ajax.php';
 
 /**

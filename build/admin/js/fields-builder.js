@@ -30,7 +30,7 @@
                 var data = {
                     items: [],
                     action: 'es_fields_builder_change_items_order',
-                    field_builder_nonce: Estatik_Fields_Builder.nonce.update_items_order
+                    field_builder_nonce: Realtek_Fields_Builder.nonce.update_items_order
                 };
 
                 $el.find( 'li' ).each( function() {
@@ -50,7 +50,7 @@
                 $sortableFieldsXHR = $.post( ajaxurl, data, function( response ) {
                     response = response || {};
                     if ( response.message ) {
-                        Estatik_Admin.renderNotification( response.message );
+                        Realtek_Admin.renderNotification( response.message );
                     }
                 }, 'json' ).fail( function() {
 
@@ -72,7 +72,7 @@
         var $section = $( '#' + section_machine_name );
 
         var data = {
-            field_builder_nonce: Estatik_Fields_Builder.nonce.get_fields_tab,
+            field_builder_nonce: Realtek_Fields_Builder.nonce.get_fields_tab,
             machine_name: section_machine_name,
             action: 'es_fields_builder_get_fields_tab'
         };
@@ -99,7 +99,7 @@
         var $tabs_nav = $( '.es-tabs__fields-builder .es-tabs__nav' );
 
         var data = {
-            field_builder_nonce: Estatik_Fields_Builder.nonce.get_sections,
+            field_builder_nonce: Realtek_Fields_Builder.nonce.get_sections,
             action: 'es_fields_builder_get_sections'
         };
 
@@ -129,7 +129,7 @@
      */
     function es_load_section_form( machine_name, $response_container ) {
         var data = {
-            field_builder_nonce: Estatik_Fields_Builder.nonce.get_section_form,
+            field_builder_nonce: Realtek_Fields_Builder.nonce.get_section_form,
             action: 'es_fields_builder_get_section_form',
             machine_name: machine_name
         };
@@ -156,7 +156,7 @@
     function es_load_field_form( machine_name, section_machine_name, $response_container ) {
 
         var data = {
-            field_builder_nonce: Estatik_Fields_Builder.nonce.get_field_form,
+            field_builder_nonce: Realtek_Fields_Builder.nonce.get_field_form,
             action: 'es_fields_builder_get_field_form',
             machine_name: machine_name,
             section_machine_name: section_machine_name
@@ -189,7 +189,7 @@
         } );
 
         // Translations list.
-        var tr = Estatik_Fields_Builder.tr;
+        var tr = Realtek_Fields_Builder.tr;
 
         // Get field settings by field type.
         $( document ).on( 'change', '.js-es-field__input-type', function() {
@@ -200,7 +200,7 @@
                 machine_name: machine_name,
                 type: $field.val(),
                 action: 'es_fields_builder_get_field_settings',
-                field_builder_nonce: Estatik_Fields_Builder.nonce.get_field_settings
+                field_builder_nonce: Realtek_Fields_Builder.nonce.get_field_settings
             };
 
             $( '.js-es-fields-builder__field-settings' ).html( '' );
@@ -209,7 +209,7 @@
                 response = response || {};
 
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 }
 
                 if ( response.content ) {
@@ -257,7 +257,7 @@
                     // Reinit fields sortable for dynamic content.
                     es_fields_builder_sortable_init();
 
-                    if ( $( 'body' ).hasClass( 'estatik_page_es_fields_builder' ) ) {
+                    if ( $( 'body' ).hasClass( 'realtek_page_es_fields_builder' ) ) {
                         $( 'html,body' ).animate( { scrollTop: 0 }, 'slow' );
                     }
 
@@ -268,7 +268,7 @@
                 }
 
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 }
 
             }, 'json' ).fail( function() {
@@ -313,7 +313,7 @@
 
             var message = tr.delete_section.replace( '%s', field_label );
 
-            $.estatikPopup( {
+            $.realtekPopup( {
                 inline_html: "<p class='es-center es-popup-text'>" + message + "</p>" +
                 "<div class='es-popup__buttons es-center'>" +
                 "<button class='js-es-popup__close es-btn es-btn es-btn--link'>" + tr.cancel + "</button>" +
@@ -335,7 +335,7 @@
             var data = {
                 machine_name: machine_name,
                 action: 'es_fields_builder_delete_section',
-                field_builder_nonce: Estatik_Fields_Builder.nonce.delete_section
+                field_builder_nonce: Realtek_Fields_Builder.nonce.delete_section
             };
 
             $.post( ajaxurl, data, function( response ) {
@@ -349,13 +349,13 @@
                 }
 
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 }
 
             }, 'json' ).fail( function() {
 
             } ).always( function() {
-                $.estatikPopup().close();
+                $.realtekPopup().close();
             } );
         } );
 
@@ -367,7 +367,7 @@
 
             var message = tr.delete_field.replace( '%s', field_label );
 
-            $.estatikPopup( {
+            $.realtekPopup( {
                 inline_html: "<p class='es-center es-popup-text'>" + message + "</p>" +
                              "<div class='es-popup__buttons es-center'>" +
                                  "<button class='js-es-popup__close es-btn es-btn--link'>" + tr.cancel + "</button>" +
@@ -386,7 +386,7 @@
             var $link = $( this );
             var data = {
                 action: 'es_fields_builder_restore_section',
-                field_builder_nonce: Estatik_Fields_Builder.nonce.restore_section,
+                field_builder_nonce: Realtek_Fields_Builder.nonce.restore_section,
                 machine_name: $link.data( 'machine-name' )
             };
 
@@ -397,7 +397,7 @@
                 }
 
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 }
             }, 'json' );
 
@@ -408,7 +408,7 @@
             var $link = $( this );
             var data = {
                 action: 'es_fields_builder_restore_field',
-                field_builder_nonce: Estatik_Fields_Builder.nonce.restore_field,
+                field_builder_nonce: Realtek_Fields_Builder.nonce.restore_field,
                 machine_name: $link.data( 'machine-name' )
             };
 
@@ -419,7 +419,7 @@
                 }
 
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 }
             }, 'json' );
 
@@ -438,7 +438,7 @@
                 machine_name: machine_name,
                 id: id,
                 action: 'es_fields_builder_delete_field',
-                field_builder_nonce: Estatik_Fields_Builder.nonce.delete_field
+                field_builder_nonce: Realtek_Fields_Builder.nonce.delete_field
             };
 
             $.post( ajaxurl, data, function( response ) {
@@ -451,13 +451,13 @@
                 }
 
                 if ( response.message ) {
-                    Estatik_Admin.renderNotification( response.message );
+                    Realtek_Admin.renderNotification( response.message );
                 }
 
             }, 'json' ).fail( function() {
 
             } ).always( function() {
-                $.estatikPopup().close();
+                $.realtekPopup().close();
             } );
         } );
 

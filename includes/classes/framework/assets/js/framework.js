@@ -1,7 +1,7 @@
 ( function( $ ) {
     'use strict';
 
-    window.EstatikFramework = { initFields: initFields };
+    window.RealtekFramework = { initFields: initFields };
 
     /**
      * @param size

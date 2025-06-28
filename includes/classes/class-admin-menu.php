@@ -19,9 +19,9 @@ class Es_Admin_Menu {
 	public static function menu_order_count() {
 		global $submenu;
 
-		if ( isset( $submenu['estatik'] ) ) {
+		if ( isset( $submenu['realtek'] ) ) {
 			// Remove 'WooCommerce' sub menu item
-			unset( $submenu['estatik'][0] );
+			unset( $submenu['realtek'][0] );
 		}
 	}
 
@@ -32,16 +32,16 @@ class Es_Admin_Menu {
 	 */
 	public static function register_admin_pages() {
 		$is_wl_enabled = ests( 'is_white_label_enabled' );
-		$parent = $is_wl_enabled ? 'estatik' : 'es_dashboard';
-		$label = $is_wl_enabled ? __( 'Listings' ) : __( 'Estatik', 'es' );
+		$parent = $is_wl_enabled ? 'realtek' : 'es_dashboard';
+		$label = $is_wl_enabled ? __( 'Listings' ) : __( 'Realtek', 'es' );
 		$function = $is_wl_enabled ? null : array( 'Es_Dashboard_Page', 'render' );
 
 		$request_count = es_get_new_requests_count();
 
 		$menu_pages = array(
-			'estatik' => array(
+			'realtek' => array(
 				'args' => array(
-					__( 'Estatik', 'es' ),
+					__( 'Realtek', 'es' ),
 					$label,
 					'manage_options',
 					$parent,

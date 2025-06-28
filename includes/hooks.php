@@ -586,12 +586,12 @@ add_action( 'pre_get_avatar', 'es_get_avatar', 9999999, 3 );
  */
 function es_display_post_states( $states, $post ) {
 	$pages = array(
-		'login_page_id' => __( 'Estatik Authentication', 'es' ),
-		'profile_page_id' => __( 'Estatik Profile', 'es' ),
-		'map_search_page_id' => __( 'Estatik Half map', 'es' ),
-		'search_results_page_id' => __( 'Estatik Search results', 'es' ),
-		'property_management_page_id' => __( 'Estatik Properties Management', 'es' ),
-		'pricing_page_id' => __( 'Estatik Pricing', 'es' ),
+		'login_page_id' => __( 'Realtek Authentication', 'es' ),
+		'profile_page_id' => __( 'Realtek Profile', 'es' ),
+		'map_search_page_id' => __( 'Realtek Half map', 'es' ),
+		'search_results_page_id' => __( 'Realtek Search results', 'es' ),
+		'property_management_page_id' => __( 'Realtek Properties Management', 'es' ),
+		'pricing_page_id' => __( 'Realtek Pricing', 'es' ),
 	);
 
 	foreach ( $pages as $key => $label ) {
@@ -633,7 +633,7 @@ if ( ! function_exists( 'es_powered_by' ) ) {
 	 */
 	function es_powered_by() {
 		if ( ! ests( 'is_white_label_enabled' ) ) {
-			echo "<div class='es-powered content-font'>" . sprintf( __( 'Powered by %s' ), "<a target='_blank' href='https://estatik.net'>" . __( 'Estatik', 'es' ) . "</a>" ) . "</div>";
+			echo "<div class='es-powered content-font'>" . sprintf( __( 'Powered by %s' ), "<a target='_blank' href='https://realtek.net'>" . __( 'Realtek', 'es' ) . "</a>" ) . "</div>";
 		}
 	}
 }
@@ -1704,7 +1704,7 @@ function es_render_property_pdf() {
 
 	if ( ! es_is_property( $property_id ) ) return;
 
-	//GuzzleHttpEstatik
+	//GuzzleHttpRealtek
 	require_once ES_PLUGIN_PATH . '/vendor/autoload.php';
 
 	$query = new WP_Query( array( 'p' => $property_id, 'post_type' => Es_Property::get_post_type_name() ) );

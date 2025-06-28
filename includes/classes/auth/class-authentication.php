@@ -39,7 +39,7 @@ abstract class Es_Authentication {
      */
     public function get_redirect_url() {
 		$site = site_url( '/' );
-//		$site = 'https://estatik4.com/';
+//		$site = 'https://realtek4.com/';
 
         return add_query_arg( array(
             'auth_network' => sprintf( '%s-%s', $this->get_network_name(), $this->_config['context'] ),

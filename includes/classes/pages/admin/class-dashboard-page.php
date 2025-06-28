@@ -10,14 +10,14 @@ class Es_Dashboard_Page {
 	}
 
     /**
-     * Get estatik.net articles.
+     * Get realtek.net articles.
      *
      * @return bool|array
      */
     public static function get_posts() {
 	    add_filter( 'http_request_timeout', array( 'Es_Dashboard_Page', 'es_posts_timeout_extend' ) );
 
-        $response = wp_remote_get( 'https://estatik.net/wp-json/wp/v2/posts?_fields=modified,link,title&per_page=10' );
+        $response = wp_remote_get( 'https://realtek.net/wp-json/wp/v2/posts?_fields=modified,link,title&per_page=10' );
 
 		remove_filter( 'http_request_timeout', array( 'Es_Dashboard_Page', 'es_posts_timeout_extend' ) );
 
@@ -170,7 +170,7 @@ class Es_Dashboard_Page {
 						'label' => 'bugfix',
 					),
 					array(
-						'text' => _x( 'Multiple estatik elementor widgets saving fix added.', 'changelog', 'es' ),
+						'text' => _x( 'Multiple realtek elementor widgets saving fix added.', 'changelog', 'es' ),
 						'label' => 'bugfix',
 					),
 					array(
@@ -537,7 +537,7 @@ class Es_Dashboard_Page {
 						'label' => 'new',
 					),
 					array(
-						'text' => _x( 'City field set as multiple in estatik search widget.', 'changelog', 'es' ),
+						'text' => _x( 'City field set as multiple in realtek search widget.', 'changelog', 'es' ),
 						'label' => 'new',
 					),
 					array(
@@ -654,7 +654,7 @@ class Es_Dashboard_Page {
 						'label' => 'new',
 					),
 					array(
-						'text' => _x( 'Multiple support for select2 fields in estatik framework added.', 'changelog', 'es' ),
+						'text' => _x( 'Multiple support for select2 fields in realtek framework added.', 'changelog', 'es' ),
 						'label' => 'new',
 					),
 					array(
@@ -662,7 +662,7 @@ class Es_Dashboard_Page {
 						'label' => 'new',
 					),
 					array(
-						'text' => _x( 'es_before_single_wrapper, es_after_single_wrapper actions for estatik single templates added', 'changelog', 'es' ),
+						'text' => _x( 'es_before_single_wrapper, es_after_single_wrapper actions for realtek single templates added', 'changelog', 'es' ),
 						'label' => 'new',
 					),
 					array(
@@ -964,7 +964,7 @@ class Es_Dashboard_Page {
 				'date' => _x( 'July, 26, 2022', 'changelog date', 'es' ),
 				'changes' => array(
 					array(
-						'text' => _x( 'Estatik settings php warning fixed (All versions)', 'changelog', 'es' ),
+						'text' => _x( 'Realtek settings php warning fixed (All versions)', 'changelog', 'es' ),
 						'label' => 'bugfix',
 					),
 					array(
@@ -1007,7 +1007,7 @@ class Es_Dashboard_Page {
             ),
             'shortcodes' => array(
                 'name' => __( 'Shortcodes', 'es' ),
-                'url' => 'https://estatik.net/docs-category/shortcodes/',
+                'url' => 'https://realtek.net/docs-category/shortcodes/',
                 'icon' => '<span class="es-icon es-icon_shortcode es-icon--rounded es-icon--green"></span>',
             ),
             'agents' => array(
@@ -1037,39 +1037,39 @@ class Es_Dashboard_Page {
      */
     public static function get_carousel_items() {
         return array(
-            'estatik-native' => array(
-                'link' => 'https://estatik.net/product/theme-native/',
+            'realtek-native' => array(
+                'link' => 'https://realtek.net/product/theme-native/',
                 'name' => __( 'Native Theme', 'es' ),
-                'demo_link' => 'http://native.estatik.net/',
+                'demo_link' => 'http://native.realtek.net/',
                 'image_url' => ES_PLUGIN_URL . 'admin/images/native.png',
                 'free' => true,
             ),
-            'estatik-trendy' => array(
-                'link' => 'https://estatik.net/product/theme-trendy-estatik-pro/',
+            'realtek-trendy' => array(
+                'link' => 'https://realtek.net/product/theme-trendy-realtek-pro/',
                 'name' => __( 'Trendy Theme', 'es' ),
-                'demo_link' => 'http://trendy.estatik.net/',
+                'demo_link' => 'http://trendy.realtek.net/',
                 'image_url' => ES_PLUGIN_URL . 'admin/images/portal.png',
             ),
-            'estatik-project' => array(
-                'link' => 'https://estatik.net/product/estatik-project-theme/',
+            'realtek-project' => array(
+                'link' => 'https://realtek.net/product/realtek-project-theme/',
                 'name' => __( 'Project Theme', 'es' ),
-                'demo_link' => 'http://project.estatik.net/',
+                'demo_link' => 'http://project.realtek.net/',
                 'image_url' => ES_PLUGIN_URL . 'admin/images/portal.png',
             ),
-            'estatik-portal' => array(
-                'link' => 'https://estatik.net/product/portal-theme/',
+            'realtek-portal' => array(
+                'link' => 'https://realtek.net/product/portal-theme/',
                 'name' => __( 'Portal Theme', 'es' ),
-                'demo_link' => 'http://portal.estatik.net/',
+                'demo_link' => 'http://portal.realtek.net/',
                 'image_url' => ES_PLUGIN_URL . 'admin/images/portal.png',
             ),
-            'estatik-realtor' => array(
-                'link' => 'https://estatik.net/product/estatik-realtor-theme/',
+            'realtek-realtor' => array(
+                'link' => 'https://realtek.net/product/realtek-realtor-theme/',
                 'name' => __( 'Realtor Theme', 'es' ),
-                'demo_link' => 'http://realtor.estatik.net/',
+                'demo_link' => 'http://realtor.realtek.net/',
                 'image_url' => ES_PLUGIN_URL . 'admin/images/realtor.png',
             ),
             'mortgage-calc' => array(
-                'link' => 'https://estatik.net/product/estatik-mortgage-calculator/',
+                'link' => 'https://realtek.net/product/realtek-mortgage-calculator/',
                 'name' => __( 'Mortgage Calculator', 'es' ),
                 'demo_link' => '',
                 'image_url' => ES_PLUGIN_URL . 'admin/images/portal.png',
@@ -1084,23 +1084,23 @@ class Es_Dashboard_Page {
     public static function get_services() {
         return array(
             array(
-                'link' => 'https://estatik.net/estatik-customization/',
+                'link' => 'https://realtek.net/realtek-customization/',
                 'text' => __( 'We can extend plugin features and customize it to meet your requirements. To get an estimate, just fill out the form and we will get back to you with a quote.', 'es' ),
                 'title' => __( 'Custom Development', 'es' ),
             ),
             array(
-                'link' => 'https://estatik.net/product/installation-setup/',
+                'link' => 'https://realtek.net/product/installation-setup/',
                 'text' => __( 'If you are limited in time or just don’t feel like setting up the plugin yourself, our team is at your service. We can help set up your WordPress website to look like our plugin or theme demo websites.', 'es' ),
                 'title' => __( 'Installation & Setup', 'es' ),
             ),
 			array(
-				'link' => 'https://estatik.net/product/estatik-premium-setup/',
-				'text' => __( 'Installation, connection to MLS, and mapping MLS fields to Estatik for every property type (Residential, Commercial, Multifamily, Lease, LotsAndLand, etc.), setting up automatic import, and launching synchronization.', 'es' ),
+				'link' => 'https://realtek.net/product/realtek-premium-setup/',
+				'text' => __( 'Installation, connection to MLS, and mapping MLS fields to Realtek for every property type (Residential, Commercial, Multifamily, Lease, LotsAndLand, etc.), setting up automatic import, and launching synchronization.', 'es' ),
 				'title' => __( 'Premium MLS Setup (for Premium users only)', 'es' ),
 			),
 //            array(
 //                'link' => '',
-//                'text' => __( 'Estatik Pro integration with any MLS provider via RETS or IDX on individual custom basis.', 'es' ),
+//                'text' => __( 'Realtek Pro integration with any MLS provider via RETS or IDX on individual custom basis.', 'es' ),
 //                'title' => __( 'MLS integration service', 'es' ),
 //            ),
 //            array(
@@ -1121,7 +1121,7 @@ class Es_Dashboard_Page {
 	    $f->load_assets();
 	    wp_enqueue_script( 'es-slick' );
 	    wp_enqueue_script( 'es-admin' );
-	    wp_enqueue_style( 'es-dashboard', ES_PLUGIN_URL . 'admin/css/dashboard.min.css', array( 'es-admin', 'es-slick' ), Estatik::get_version() );
+	    wp_enqueue_style( 'es-dashboard', ES_PLUGIN_URL . 'admin/css/dashboard.min.css', array( 'es-admin', 'es-slick' ), Realtek::get_version() );
 
 		es_load_template( 'admin/dashboard/index.php', array(
 		    'links' => static::get_links(),

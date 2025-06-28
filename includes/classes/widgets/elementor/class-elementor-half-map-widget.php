@@ -44,7 +44,7 @@ class Elementor_Es_Half_Map_Widget extends Elementor_Es_Query_Widget {
      * @return string Widget title.
      */
     public function get_title() {
-        return _x( 'Estatik Half Map', 'widget name', 'es' );
+        return _x( 'Realtek Half Map', 'widget name', 'es' );
     }
 
     /**

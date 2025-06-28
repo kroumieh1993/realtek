@@ -320,7 +320,7 @@ if ( ! function_exists( 'es_locate_template' ) ) {
 		$context = ES_PLUGIN_PATH . DS . 'templates' . DS;
 		$base = $template_path;
 
-		$find[] = 'estatik4/' . $template_path;
+		$find[] = 'realtek4/' . $template_path;
 		$find[] = $context . $template_path;
 
 		$template_path = locate_template( array_unique( $find ) );
@@ -1238,7 +1238,7 @@ function et_builder_is_enabled( $post_id ) {
 /**
  * @return string
  */
-function es_et_builder_estatik_get_initial_property_content() {
+function es_et_builder_realtek_get_initial_property_content() {
 	$content = '[et_pb_section admin_label="section"]
 			[et_pb_row admin_label="row"]
 				[et_pb_column type="4_4"][es_single_entity_page][/et_pb_column]

@@ -14,7 +14,7 @@ function es_ajax_save_field() {
 			$value = es_clean( filter_input( INPUT_POST, 'value' ) );
 			$container = filter_input( INPUT_POST, 'container' );
 
-			if ( 'estatik-settings' == $container ) {
+			if ( 'realtek-settings' == $container ) {
 				ests_save_option( $field, $value );
 			}
 		}

@@ -23,7 +23,7 @@ abstract class Elementor_Es_Base_Widget extends Widget_Base {
     public function __construct( $data = array(), $args = null ) {
         parent::__construct( $data, $args );
         $public = ES_PLUGIN_URL . 'public';
-        wp_register_script( 'es-elementor-handle', $public . '/js/elementor.min.js', array( 'es-properties', 'elementor-frontend' ), Estatik::get_version(), true );
+        wp_register_script( 'es-elementor-handle', $public . '/js/elementor.min.js', array( 'es-properties', 'elementor-frontend' ), Realtek::get_version(), true );
     }
 
     /**
@@ -54,7 +54,7 @@ abstract class Elementor_Es_Base_Widget extends Widget_Base {
      * @return array|string[]
      */
     public function get_categories() {
-        return array( 'estatik-category' );
+        return array( 'realtek-category' );
     }
 
 	/**

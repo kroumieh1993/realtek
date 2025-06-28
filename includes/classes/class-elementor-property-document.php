@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class EstatikProperty.
+ * Class RealtekProperty.
  */
 class Es_Elementor_Property_Document extends \ElementorPro\Modules\ThemeBuilder\Documents\Single_Base {
 
