@@ -26,6 +26,7 @@ class Es_Shortcodes_List {
             $path . 'class-shortcode.php',
             $path . 'class-my-entities-shortcode.php',
             $path . 'class-single-entity-shortcode.php',
+            'Realtek_Client_Inquiry_Shortcode' => $path . 'class-realtek-client-inquiry-shortcode.php',
             'Es_Search_Form_Shortcode' => $path . 'class-search-form-shortcode.php',
             'Es_Agent_Agency_Search_Form_Shortcode' => $path . 'class-agent-agency-search-form-shortcode.php',
             'Es_My_Listing_Shortcode' => $path . 'class-my-listing-shortcode.php',
