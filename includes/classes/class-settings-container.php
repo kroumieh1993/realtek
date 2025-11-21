@@ -985,6 +985,7 @@ class Es_Settings_Container
 //						'single-full-width-slider' => __( 'With full-width slider', 'es' ),
 						'single-tiled-gallery' => __( 'With tiled gallery', 'es' ),
 //						'single-full-width-tiled' => __( 'With full-width tiled gallery', 'es' ),
+						'single-highlighted-info' => __( 'Showcase with info sidebar', 'es' ),
 						'single-left-slider' => __( 'With left slider', 'es' ),
 					),
 				),
