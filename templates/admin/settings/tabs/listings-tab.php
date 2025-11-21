@@ -43,6 +43,7 @@ es_settings_field_render( 'single_layout', array(
 //		'single-full-width-slider' => ES_PLUGIN_URL . 'admin/images/single-full-width-slider.svg',
 		'single-tiled-gallery' => ES_PLUGIN_URL . 'admin/images/single-tiled-gallery.svg',
 //		'single-full-width-tiled' => ES_PLUGIN_URL . 'admin/images/single-full-width-tiled.svg',
+		'single-highlighted-info' => ES_PLUGIN_URL . 'admin/images/single-highlighted-info.svg',
 		'single-left-slider' => ES_PLUGIN_URL . 'admin/images/single-left-slider.svg',
 	),
 ) ); ?>
